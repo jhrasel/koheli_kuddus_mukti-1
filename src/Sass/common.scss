@@ -1,0 +1,181 @@
+@import "utilities.scss";
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none !important;
+    outline: none !important;
+    text-decoration: none !important;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: Roboto, sans-serif;
+    color: #000;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+section,
+header,
+footer {
+    width: 100%;
+    clear: both;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    color: $headTxtColor;
+    line-height: 4rem;
+}
+
+a {
+    // color: #0000ff;
+    text-decoration: none;
+
+    &:hover {
+        // color: #ff0000;
+    }
+}
+
+button,
+button:focus,
+input,
+input:focus,
+textarea,
+textarea:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    text-align: justify;
+    color: $lightTxtColor;
+}
+
+input,
+textarea {
+    width: 100%;
+    background: #222222;
+    color: #fff;
+    border: 0;
+    margin: 0.5rem 0;
+    padding: 1rem;
+
+    &:focus {
+        outline: 1px solid $pmColor;
+    }
+}
+
+/*==============================
+        COMMON CODE
+ ==============================*/
+section {
+    padding: 5rem 0;
+}
+
+.container {
+    max-width: 1100px;
+    width: 98%;
+    margin: 0 auto;
+}
+
+/*==============================
+        SECTOION HEADING
+ ==============================*/
+.section_heading_container {
+    margin: 0 auto;
+    text-align: center;
+
+    .section_title {
+        color: $headTxtColor;
+        font-weight: 700;
+        font-size: 6rem;
+        line-height: 6rem;
+        position: relative;
+        margin-bottom: 4.5rem;
+        display: inline-block;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -20px;
+            width: 100%;
+            height: 2px;
+            background: $pmColor;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 100%;
+            bottom: -30px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: $pmColor;
+            animation: left-to-right 5s ease-in-out infinite alternate;
+        }
+    }
+
+    p.section_description {
+        color: $lightTxtColor;
+        // margin-bottom: 8rem;
+    }
+}
+
+/*==============================
+        BUTTONS
+ ==============================*/
+.btn {
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    font-size: 1.7rem;
+    // font-family: $Noto;
+    font-weight: 600;
+    border-radius: 5px;
+
+    &:active {
+        transform: scale(0.9);
+    }
+}
+
+/*==============================
+        BOX
+ ==============================*/
+// .box {
+//     border: 1px solid $borderColor !important;
+//     box-shadow: $boxShadow;
+//     text-align: center;
+//     border-radius: 3px;
+//     transition: box-shadow 0.3s;
+//     overflow: hidden;
+
+//     &:hover {
+//         // transform: scale(1.05);
+//         box-shadow: 0px 0px 20px 5px #eee;
+//     }
+// }

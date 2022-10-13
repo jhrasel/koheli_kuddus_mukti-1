@@ -1,0 +1,131 @@
+@import "utilities.scss";
+
+/*==============================
+        NAV
+ ==============================*/
+#nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+
+    .logo_container {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        span {
+            background: $pmColor;
+            padding: 0.5rem 1rem;
+            color: #fff;
+            font-weight: 700;
+            border-radius: 5px;
+        }
+
+        img {
+            width: 20rem;
+        }
+    }
+
+    .boat_area {
+        img {
+            width: 8rem;
+        }
+    }
+}
+
+/*==============================
+        BANNER
+ ==============================*/
+
+/*==============================
+        TESTIMONIAL SECTION
+ ==============================*/
+
+// #testimonials {
+//     height: 100vh; //
+
+//     img.testmonial_bg {
+//         position: absolute;
+//         width: 100%;
+//         height: 100vh; //
+//         bottom: 0;
+//         left: 0;
+//         z-index: -1;
+//         opacity: 0.25;
+//         padding: 2rem 15rem 0;
+//         background: #000;
+//     }
+
+//     .testimonials_container {
+//         padding: 10rem 3rem 0;
+
+//         .testimonial_box {
+//             text-align: justify;
+//             z-index: 5 !important;
+//             border: none !important;
+//             box-shadow: none;
+//             padding-bottom: 8rem;
+
+//             &:hover {
+//                 box-shadow: none;
+//             }
+
+//             .testimonial {
+//                 margin-bottom: 3rem;
+//                 img {
+//                     width: 5rem;
+//                 }
+//                 p {
+//                     font-weight: 700;
+//                     padding: 0 5rem;
+//                     font-size: 3rem;
+//                     line-height: 3rem;
+//                     text-align: center;
+//                 }
+//             }
+
+//             .client {
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: center;
+//                 gap: 2rem;
+//                 img {
+//                     width: 80px;
+//                     height: 80px;
+//                     object-fit: cover;
+//                     border-radius: 50%;
+//                 }
+
+//                 .clientInfo {
+//                     h5 {
+//                         font-size: 2rem;
+//                         line-height: 2.5rem;
+//                     }
+//                     p {
+//                         font-style: italic;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     .swiper-horizontal > .swiper-pagination-bullets,
+//     .swiper-pagination-bullets.swiper-pagination-horizontal,
+//     .swiper-pagination-custom,
+//     .swiper-pagination-fraction {
+//         bottom: 0px;
+//     }
+//     .swiper-pagination-bullet {
+//         background-color: #000 !important;
+//     }
+//     .swiper-pagination-bullet-active {
+//         background-color: #000 !important;
+//     }
+// }
