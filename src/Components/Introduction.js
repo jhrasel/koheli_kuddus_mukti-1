@@ -2,7 +2,7 @@ import React from "react";
 import Introduction_Image from "../Assets/images/Introduction_Image.jpg";
 export default function Introduction() {
     return (
-        <div id="introduction">
+        <section id="introduction">
             <img src={Introduction_Image} alt="Introduction_Image" />
 
             <div className="introduction_text">
@@ -29,6 +29,6 @@ export default function Introduction() {
                 <b>কোহেলী কুদ্দুস মুক্তি</b>
                 <span>অ্যাডভোকেট</span>
             </div>
-        </div>
+        </section>
     );
 }

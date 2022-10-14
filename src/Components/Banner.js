@@ -14,7 +14,7 @@ import "swiper/css";
 
 export default function Banner() {
     return (
-        <div id="banner">
+        <section id="banner">
             <div className="slider_container">
                 <Swiper
                     modules={[Autoplay]}
@@ -55,6 +55,6 @@ export default function Banner() {
                 {/* <h1>আপনাদের দোয়া ও ভালবাসায় জনগনের সেবায় নিবেদিত প্রাণ </h1> */}
                 <button className="btn">যোগাযোগ করুন</button>
             </div>
-        </div>
+        </section>
     );
 }

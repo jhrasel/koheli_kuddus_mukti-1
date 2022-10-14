@@ -11,13 +11,13 @@ const cardInfo = [
 
 export default function Cards() {
     return (
-        <div id="cards">
+        <section id="cards">
             {cardInfo.map((card, index) => (
                 <div className="card">
                     <img src={card.icon} alt="icon" />
                     <p>{card.text}</p>
                 </div>
             ))}
-        </div>
+        </section>
     );
 }
