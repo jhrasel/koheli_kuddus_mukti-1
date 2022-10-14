@@ -147,16 +147,16 @@ section {
 }
 
 /*==============================
-        BUTTONS
+        BUTTON
  ==============================*/
 .btn {
     cursor: pointer;
-    width: 150px;
-    height: 50px;
     font-size: 1.7rem;
-    // font-family: $Noto;
     font-weight: 600;
-    border-radius: 5px;
+    border-radius: 50px;
+    padding: 1rem 3rem;
+    background: $pmColor;
+    color: #fff;
 
     &:active {
         transform: scale(0.9);
