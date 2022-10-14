@@ -92,13 +92,13 @@
     .banner_heading {
         z-index: 8;
         position: absolute;
-        top: 18rem;
+        bottom: 3rem;
         right: 10rem;
         max-width: 60rem;
         text-align: right;
         h1 {
             color: #fff;
-            height: 18rem;
+            height: 16rem;
             font-size: 4.5rem;
             line-height: 5.5rem;
             margin-bottom: 2rem;
@@ -305,6 +305,11 @@
     }
 }
 
+/*==============================
+        POLITICAL TOUR 
+ ==============================*/
+#political_tour {
+}
 /*==============================
         SOCIAL WORKS 
  ==============================*/
