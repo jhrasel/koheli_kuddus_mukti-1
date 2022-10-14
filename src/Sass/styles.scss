@@ -154,7 +154,8 @@
         INTRODUCTION
  ==============================*/
 #introduction {
-    background: #fff1df;
+    background: $bgColor;
+
     padding: 10rem;
     display: flex;
     gap: 4rem;
@@ -228,6 +229,77 @@
                         text-align: left;
                     }
                 }
+            }
+        }
+    }
+}
+
+/*==============================
+        PROGRAMS 
+ ==============================*/
+#programs {
+    background: $bgColor;
+
+    .container {
+        padding: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5rem;
+    }
+    .section_text {
+        max-width: 40rem;
+        h2 {
+            font-size: 4rem;
+            line-height: 5rem;
+        }
+        p {
+            margin: 1rem 0 3rem;
+        }
+    }
+
+    .program_list_container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .programInfo {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            padding: 3rem;
+            background: #fff;
+            color: $lightTxtColor;
+
+            .date_area {
+                border-right: 2px solid $lightTxtColor !important;
+                padding-right: 2rem;
+                p {
+                    color: $lightTxtColor;
+                    text-align: right;
+                }
+                b {
+                    font-size: 2rem;
+                }
+            }
+
+            .program_title {
+                color: $lightTxtColor;
+            }
+        }
+
+        .latest {
+            background: $pmColor;
+            color: #fff;
+
+            .date_area {
+                border-right: 2px solid #fff !important;
+                p {
+                    color: #fff;
+                }
+            }
+            .program_title {
+                color: #fff;
             }
         }
     }

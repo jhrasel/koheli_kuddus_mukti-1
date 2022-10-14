@@ -46,7 +46,7 @@ export default function Strength() {
                 </div>
                 <div className="strength_Info_container">
                     {strengthInfo.map((strg, index) => (
-                        <div className="strength_Info">
+                        <div className="strength_Info" key={index + 1}>
                             <b>{`0${index + 1}`}</b>
                             <div className="strength_text">
                                 <h5>{strg.title}</h5>

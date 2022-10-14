@@ -160,6 +160,13 @@ textarea {
     }
 }
 
+.btn_outline {
+    @extend .btn;
+    background: #fff;
+    border: 2px solid $pmColor !important;
+    color: $pmColor;
+}
+
 /*==============================
         BOX
  ==============================*/
