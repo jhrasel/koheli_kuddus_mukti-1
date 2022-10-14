@@ -149,3 +149,35 @@
         }
     }
 }
+
+/*==============================
+        INTRODUCTION
+ ==============================*/
+#introduction {
+    background: #fff1df;
+    padding: 10rem;
+    display: flex;
+    gap: 4rem;
+
+    img {
+        width: 30rem;
+    }
+
+    .introduction_text {
+        h2 {
+            font-size: 4rem;
+        }
+        p {
+            margin: 1rem 0;
+        }
+        b {
+            display: block;
+            color: $pmColor;
+            margin-top: 2rem !important;
+        }
+        span {
+            color: $lightTxtColor;
+            font-size: 1.4rem;
+        }
+    }
+}
