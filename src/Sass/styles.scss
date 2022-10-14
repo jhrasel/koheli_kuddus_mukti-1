@@ -304,3 +304,25 @@
         }
     }
 }
+
+/*==============================
+        SOCIAL WORKS 
+ ==============================*/
+#social_works {
+    background: $bgColor;
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+
+    .section_text {
+        max-width: 40rem;
+        h2 {
+            font-size: 4rem;
+            line-height: 5rem;
+        }
+        p {
+            margin: 1rem 0 3rem;
+        }
+    }
+}
