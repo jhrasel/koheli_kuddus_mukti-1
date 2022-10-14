@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "../Components/Banner";
 import Cards from "../Components/Cards";
 import Introduction from "../Components/Introduction";
+import Strength from "../Components/Strength";
 
 export default function Home() {
     return (
@@ -10,6 +11,7 @@ export default function Home() {
             <div className="container">
                 <Cards />
                 <Introduction />
+                <Strength />
             </div>
         </>
     );

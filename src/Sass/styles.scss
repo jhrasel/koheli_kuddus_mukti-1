@@ -182,3 +182,53 @@
         }
     }
 }
+
+/*==============================
+        STRENGTH 
+ ==============================*/
+#strength {
+    margin: 10rem 0;
+    position: relative;
+
+    .section_content {
+        padding: 10rem 5rem 0;
+
+        .img_area {
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            img {
+                width: 30rem;
+            }
+        }
+        .strength_Info_container {
+            display: grid;
+            grid-template-columns: 30% 30%;
+            justify-content: space-between;
+
+            .strength_Info {
+                display: flex;
+                gap: 1rem;
+                max-width: 30rem;
+                margin-bottom: 4rem;
+
+                b {
+                    color: $pmColor;
+                    font-size: 2rem;
+                }
+
+                .strength_text {
+                    h5 {
+                        line-height: 2.2rem;
+                        font-size: 2rem;
+                        margin-bottom: 0.5rem;
+                    }
+                    p {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}

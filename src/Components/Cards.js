@@ -13,7 +13,7 @@ export default function Cards() {
     return (
         <section id="cards">
             {cardInfo.map((card, index) => (
-                <div className="card">
+                <div className="card" key={index}>
                     <img src={card.icon} alt="icon" />
                     <p>{card.text}</p>
                 </div>
