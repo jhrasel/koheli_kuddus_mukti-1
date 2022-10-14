@@ -105,88 +105,47 @@
         }
     }
 }
+
 /*==============================
-        TESTIMONIAL SECTION
+        CARDS
  ==============================*/
+#cards {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 7rem 0;
 
-// #testimonials {
-//     height: 100vh; //
+    .card {
+        background: #ffffff;
+        border: 1px solid rgba(244, 140, 6, 0.3) !important;
+        border-radius: 8px;
+        width: 20rem;
+        height: 25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
 
-//     img.testmonial_bg {
-//         position: absolute;
-//         width: 100%;
-//         height: 100vh; //
-//         bottom: 0;
-//         left: 0;
-//         z-index: -1;
-//         opacity: 0.25;
-//         padding: 2rem 15rem 0;
-//         background: #000;
-//     }
+        &:hover {
+            background: $pmColor;
+            transform: rotateX(360deg);
+            img {
+                border: 3px solid #fff !important;
+                border-radius: 10px;
+            }
+            p {
+                color: #fff;
+            }
+        }
 
-//     .testimonials_container {
-//         padding: 10rem 3rem 0;
-
-//         .testimonial_box {
-//             text-align: justify;
-//             z-index: 5 !important;
-//             border: none !important;
-//             box-shadow: none;
-//             padding-bottom: 8rem;
-
-//             &:hover {
-//                 box-shadow: none;
-//             }
-
-//             .testimonial {
-//                 margin-bottom: 3rem;
-//                 img {
-//                     width: 5rem;
-//                 }
-//                 p {
-//                     font-weight: 700;
-//                     padding: 0 5rem;
-//                     font-size: 3rem;
-//                     line-height: 3rem;
-//                     text-align: center;
-//                 }
-//             }
-
-//             .client {
-//                 display: flex;
-//                 justify-content: center;
-//                 align-items: center;
-//                 gap: 2rem;
-//                 img {
-//                     width: 80px;
-//                     height: 80px;
-//                     object-fit: cover;
-//                     border-radius: 50%;
-//                 }
-
-//                 .clientInfo {
-//                     h5 {
-//                         font-size: 2rem;
-//                         line-height: 2.5rem;
-//                     }
-//                     p {
-//                         font-style: italic;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-
-//     .swiper-horizontal > .swiper-pagination-bullets,
-//     .swiper-pagination-bullets.swiper-pagination-horizontal,
-//     .swiper-pagination-custom,
-//     .swiper-pagination-fraction {
-//         bottom: 0px;
-//     }
-//     .swiper-pagination-bullet {
-//         background-color: #000 !important;
-//     }
-//     .swiper-pagination-bullet-active {
-//         background-color: #000 !important;
-//     }
-// }
+        img {
+            margin-bottom: 2rem;
+            width: 6rem;
+        }
+        p {
+            text-align: center;
+            color: $pmColor;
+        }
+    }
+}

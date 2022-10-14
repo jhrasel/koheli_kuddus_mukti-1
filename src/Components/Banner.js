@@ -1,9 +1,9 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
-import BannerTwo from "../Assets/images/banner-1.jpg";
-import BannerOne from "../Assets/images/banner-2.jpg";
-import BannerThree from "../Assets/images/banner-3.jpg";
-import BannerFour from "../Assets/images/banner-4.jpg";
+import BannerTwo from "../Assets/images/Banner/banner-1.jpg";
+import BannerOne from "../Assets/images/Banner/banner-2.jpg";
+import BannerThree from "../Assets/images/Banner/banner-3.jpg";
+import BannerFour from "../Assets/images/Banner/banner-4.jpg";
 
 // Import Swiper React components
 import { Autoplay } from "swiper";
