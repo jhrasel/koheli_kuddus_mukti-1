@@ -4,7 +4,7 @@ import LOGO from "../Assets/images/LOGO.svg";
 
 export default function Nav() {
     return (
-        <div id="nav">
+        <nav id="nav">
             <div className="container">
                 <div className="logo_container">
                     <span>K</span>
@@ -14,6 +14,6 @@ export default function Nav() {
                     <img src={Boat} alt="Boat" />
                 </div>
             </div>
-        </div>
+        </nav>
     );
 }
