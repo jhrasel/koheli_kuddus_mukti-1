@@ -162,6 +162,7 @@
 
     img {
         width: 30rem;
+        height: 35rem;
     }
 
     .introduction_text {
@@ -200,7 +201,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             img {
-                width: 30rem;
+                width: 28rem;
             }
         }
         .strength_Info_container {
@@ -227,6 +228,8 @@
                     }
                     p {
                         text-align: left;
+                        font-size: 1.5rem;
+                        line-height: 1.8rem;
                     }
                 }
             }
