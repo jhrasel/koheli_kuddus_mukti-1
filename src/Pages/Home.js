@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "../Components/Banner";
 import Cards from "../Components/Cards";
 import Introduction from "../Components/Introduction";
+import PhotosVideos from "../Components/PhotosVideos";
 import PoliticalTour from "../Components/PoliticalTour";
 import Programs from "../Components/Programs";
 import SocialWorks from "../Components/SocialWorks";
@@ -20,6 +21,7 @@ export default function Home() {
             <div className="container">
                 <PoliticalTour />
                 <SocialWorks />
+                <PhotosVideos />
             </div>
         </>
     );

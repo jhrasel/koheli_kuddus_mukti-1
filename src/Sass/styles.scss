@@ -410,8 +410,9 @@
         }
     }
 }
+
 /*==============================
-SOCIAL WORKS 
+        SOCIAL WORKS 
  ==============================*/
 #social_works {
     background: $bgColor;
@@ -429,5 +430,117 @@ SOCIAL WORKS
         p {
             margin: 1rem 0 3rem;
         }
+    }
+}
+
+/*==============================
+        PHOTOS & VIDEOS 
+ ==============================*/
+#photosVideos {
+    margin: 10rem 0 !important;
+
+    .btn_block {
+        margin: 5rem 0;
+        text-align: center;
+
+        .btn_wrapper {
+            position: relative;
+            display: inline-block;
+            border-radius: 50px;
+            overflow: hidden;
+            border: 1px solid $lightTxtColor !important;
+            padding: 1px;
+
+            span {
+                border-radius: 50px;
+                transition: 0.4s;
+                position: absolute;
+                left: 0;
+                top: 0.5px;
+                width: 50%;
+                height: 100%;
+                background: $pmColor;
+                z-index: -1;
+            }
+
+            button {
+                background: none;
+                padding: 1rem 4rem;
+                // font-weight: 700;
+                font-size: 1.8rem;
+                cursor: pointer;
+                transition: color 0.5s;
+                color: #000;
+            }
+        }
+
+        // If Video Button Active
+        .videoActive {
+            span {
+                left: 50%;
+            }
+            .videosBtn {
+                color: #fff;
+            }
+        }
+        // If Photos Button Active
+        .photosActive {
+            .photosBtn {
+                color: #fff;
+            }
+        }
+    }
+
+    .photo_grid {
+        padding: 0 7rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(5, 20rem);
+        grid-gap: 2rem;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .photo1 {
+            grid-row: 1 / span 2;
+            grid-column: 2;
+        }
+        .photo3 {
+            grid-row: 2 / span 2;
+            grid-column: 1;
+        }
+        .photo6 {
+            grid-row: 3 / span 2;
+            grid-column: 3;
+        }
+        .photo8 {
+            grid-row: 4 / span 2;
+            grid-column: 1 / span 2;
+        }
+    }
+
+    .video_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        position: relative;
+
+        .loader_text {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: -1;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    }
+
+    .more_btn {
+        text-align: center;
+        margin: 4rem 0;
     }
 }
