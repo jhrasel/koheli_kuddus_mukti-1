@@ -15,7 +15,7 @@
         content: "";
         width: 100%;
         height: 60%;
-        background: rgba(0, 0, 0, 0.85);
+        background: rgba(0, 0, 0, 1);
         position: absolute;
         top: 20%;
         filter: blur(20px);
@@ -241,11 +241,11 @@
     background: $bgColor;
 
     .container {
-        padding: 5rem;
+        padding: 10rem 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 5rem;
+        gap: 4rem;
     }
     .section_text {
         max-width: 40rem;
@@ -261,25 +261,25 @@
     .program_list_container {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 1.5rem;
 
         .programInfo {
             display: flex;
             align-items: center;
-            gap: 2rem;
-            padding: 3rem;
+            gap: 1rem;
+            padding: 2rem;
             background: #fff;
             color: $lightTxtColor;
 
             .date_area {
-                border-right: 2px solid $lightTxtColor !important;
-                padding-right: 2rem;
+                border-right: 1.5px solid $lightTxtColor !important;
+                padding-right: 1.5rem;
                 p {
                     color: $lightTxtColor;
                     text-align: right;
                 }
                 b {
-                    font-size: 2rem;
+                    font-size: 1.8rem;
                 }
             }
 
@@ -293,7 +293,7 @@
             color: #fff;
 
             .date_area {
-                border-right: 2px solid #fff !important;
+                border-right: 1.5px solid #fff !important;
                 p {
                     color: #fff;
                 }
@@ -309,6 +309,7 @@
         POLITICAL TOUR 
  ==============================*/
 #political_tour {
+    margin: 5rem 0;
 }
 /*==============================
         SOCIAL WORKS 

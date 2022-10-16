@@ -17,32 +17,26 @@ var monthName = [
 
 const programList = [
     {
-        programTitle: "Meeting with Ministry of Environment for socializing",
+        // MAXIMUM 70 CHARACTER FOR PROGRAM TITLE
+        programTitle:
+            "Meeting with Ministry of Environment for socializing lll ssfs sdfjkkl",
         date: `${new Date().getDate()} ${monthName[new Date().getMonth()]}`,
-        time: `${
-            new Date().getHours(15) < 12
-                ? new Date().getHours(15)
-                : new Date().getHours(15) - 12
-        } : ${new Date().getMinutes()}`,
+        time: `09 : 10 AM`,
     },
     {
         programTitle: "Opening Ceremony of Mohammadpur high school",
         date: `${new Date().getDate()} ${monthName[new Date().getMonth()]}`,
-        time: `${
-            new Date().getHours(15) < 12
-                ? new Date().getHours(15)
-                : new Date().getHours(15) - 12
-        } : ${new Date().getMinutes()}`,
+        time: `09 : 10 AM`,
     },
     {
         programTitle: "Opening Ceremony of Mohammadpur high school",
         date: `${new Date().getDate()} ${monthName[new Date().getMonth()]}`,
-        time: `${new Date().getHours()} : ${new Date().getMinutes()}`,
+        time: `09 : 10 AM`,
     },
     {
         programTitle: "Opening Ceremony of Mohammadpur high school",
         date: `${new Date().getDate()} ${monthName[new Date().getMonth()]}`,
-        time: `${new Date().getHours()} : ${new Date().getMinutes()}`,
+        time: `09 : 10 AM`,
     },
 ];
 
