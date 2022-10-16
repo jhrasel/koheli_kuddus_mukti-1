@@ -14,8 +14,8 @@
     &::after {
         content: "";
         width: 100%;
-        height: 60%;
-        background: rgba(0, 0, 0, 0.9);
+        height: 50%;
+        background: rgba(0, 0, 0, 0.99);
         position: absolute;
         top: 10%;
         filter: blur(18px);
@@ -309,7 +309,7 @@
         POLITICAL TOUR 
  ==============================*/
 #political_tour {
-    margin: 5rem 0 15rem !important;
+    margin: 5rem 0 12rem !important;
 
     .political_tour_info_container {
         margin: 8rem 0;
