@@ -615,3 +615,25 @@
         cursor: pointer;
     }
 }
+
+/*==============================
+        FOOTER
+ ==============================*/
+#footer {
+    text-align: center;
+    color: $pmColor;
+    background: $bgColor;
+    padding: 5rem 0;
+
+    .copyrights {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        margin-bottom: 5px;
+
+        h6 {
+            font-size: 1.6rem;
+            color: $pmColor;
+        }
+    }
+}
