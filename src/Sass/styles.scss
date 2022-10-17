@@ -424,6 +424,11 @@
             margin: 1rem 0 3rem;
         }
     }
+    iframe {
+        // width: 100%;
+        width: 560px;
+        aspect-ratio: 16/9;
+    }
 }
 
 /*==============================

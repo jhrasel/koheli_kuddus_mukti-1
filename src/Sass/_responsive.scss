@@ -104,8 +104,22 @@
     #cards {
         gap: 1rem;
     }
+
+    #political_tour .political_tour_info_container .political_tour_info {
+        gap: 1.5rem;
+    }
+
+    #social_works .video_area {
+        iframe {
+            width: 500px !important;
+            aspect-ratio: 16/9;
+        }
+    }
+
     #photosVideos .photo_grid {
         padding: 0px 0rem;
         grid-gap: 0.5rem;
     }
 }
+
+// 552px - Political Tour, social_works

@@ -14,8 +14,8 @@ export default function SocialWorks() {
 
             <div className="video_area">
                 <iframe
-                    width="560"
-                    height="315"
+                    // width="560"
+                    // height="315"
                     src="https://www.youtube.com/embed/xFha5XgMdHA"
                     title="YouTube video player"
                     frameBorder="0"
