@@ -1,5 +1,4 @@
 @import "utilities.scss";
-
 /*==============================
         NAV
  ==============================*/
@@ -163,7 +162,7 @@
             font-size: 4rem;
         }
         p {
-            margin: 1rem 0;
+            margin: 1.5rem 0 1rem;
             font-size: 1.4rem;
         }
         b {
@@ -323,13 +322,14 @@
                 display: flex;
                 align-items: center;
                 gap: 2rem;
-                width: 40%;
+                width: 50%;
 
                 .text_area {
                     text-align: right;
                     h6 {
                         font-size: 1.7rem;
-                        margin-bottom: 0.5rem;
+                        line-height: 2.2rem;
+                        // margin-bottom: 0.5rem;
                     }
                     p {
                         font-size: 1.3rem;
@@ -345,7 +345,7 @@
             }
 
             .season {
-                width: 40%;
+                width: 50%;
                 font-size: 1.7rem;
                 font-weight: 700;
             }
@@ -394,7 +394,7 @@
         // Middle Line
         .middle_line {
             position: absolute;
-            top: 40px;
+            top: 50px;
             left: 50%;
             transform: translateX(-50%);
             width: 2px;
@@ -611,8 +611,10 @@
         display: flex;
         gap: 2rem;
         font-size: 4rem;
-        color: $pmColor;
-        cursor: pointer;
+
+        a {
+            color: $pmColor;
+        }
     }
 }
 
@@ -637,3 +639,8 @@
         }
     }
 }
+
+/*==============================
+        RESPONSIVE
+ ==============================*/
+@import "responsive.scss";

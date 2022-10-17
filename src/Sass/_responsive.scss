@@ -1,0 +1,101 @@
+@media screen and (max-width: 999px) {
+    #banner::after {
+        background: linear-gradient(
+            360deg,
+            rgba(0, 0, 0, 0.77) -15.47%,
+            rgba(0, 0, 0, 0.47) 32.85%,
+            rgba(0, 0, 0, 0) 60.9%
+        );
+    }
+
+    #introduction {
+        padding: 5rem 3rem;
+        gap: 2rem;
+    }
+
+    #strength .section_content {
+        padding: 10rem 2rem 0;
+    }
+
+    #programs .container {
+        flex-direction: column;
+        text-align: center;
+
+        .section_text p {
+            text-align: center;
+        }
+    }
+
+    #social_works {
+        flex-direction: column;
+        gap: 3rem;
+        text-align: center;
+        .section_text {
+            max-width: 60rem;
+            p {
+                text-align: center;
+            }
+        }
+    }
+
+    #photosVideos .photo_grid {
+        padding: 0px 1rem;
+    }
+
+    #contactMe {
+        .section_content {
+            gap: 2rem;
+        }
+        form {
+            width: 50%;
+        }
+        .contacts_area {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 799px) {
+    #introduction {
+        flex-direction: column;
+        gap: 5rem;
+        text-align: center;
+
+        img {
+            margin: 0 auto;
+        }
+    }
+
+    #strength .section_content {
+        padding: 10rem 1rem 0;
+
+        .img_area img {
+            width: 20rem;
+        }
+    }
+
+    #political_tour .political_tour_info_container .political_tour_info {
+        .info_area {
+            gap: 1rem;
+        }
+    }
+
+    #contactMe {
+        .section_content {
+            flex-direction: column;
+            gap: 7rem;
+        }
+        form {
+            width: 100%;
+            max-width: 55rem;
+            margin: auto;
+        }
+        .contacts_area {
+            width: 100%;
+
+            .social_links {
+                justify-content: center;
+            }
+        }
+    }
+}

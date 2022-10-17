@@ -89,15 +89,15 @@ export default function ContactMe() {
 
                     {/* Social Media Links */}
                     <div className="social_links">
-                        <span>
+                        <a href="/">
                             <AiOutlineTwitter />
-                        </span>
-                        <span>
+                        </a>
+                        <a href="/">
                             <AiFillFacebook />
-                        </span>
-                        <span>
+                        </a>
+                        <a href="/">
                             <AiFillLinkedin />
-                        </span>
+                        </a>
                     </div>
                 </div>
             </div>
