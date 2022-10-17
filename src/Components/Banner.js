@@ -42,9 +42,9 @@ export default function Banner() {
                 <h1>
                     <Typewriter
                         words={[
-                            // Max 60 character for Bengali, 75 character for English.
+                            // Max 60 character
                             "আপনাদের দোয়া ও ভালবাসায় জনগনের সেবায় নিবেদিত প্রাণ",
-                            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit incidunt consectetur.",
+                            "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                         ]}
                         loop={false}
                         cursor

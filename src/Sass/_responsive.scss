@@ -105,6 +105,14 @@
         gap: 1rem;
     }
 
+    #strength .section_content {
+        .strength_Info_container .strength_Info {
+            display: block;
+        }
+        .img_area img {
+            width: 15rem;
+        }
+    }
     #political_tour .political_tour_info_container .political_tour_info {
         gap: 1.5rem;
     }
@@ -122,4 +130,70 @@
     }
 }
 
-// 552px - Political Tour, social_works
+@media screen and (max-width: 552px) {
+    #political_tour {
+        .political_tour_info_container {
+            .political_tour_info {
+                flex-direction: row-reverse;
+                gap: 3rem;
+
+                .info_area {
+                    flex-direction: row-reverse;
+                    width: 70%;
+
+                    .text_area {
+                        text-align: left;
+                        p {
+                            text-align: left;
+                        }
+                    }
+                }
+
+                .season {
+                    width: 30%;
+                    text-align: right;
+                }
+
+                // Middle Point
+                .mid_icon {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+            }
+
+            // Middle Line
+            .middle_line {
+                top: 50px;
+                width: 1px;
+                left: 32.6%;
+                transform: translateX(0);
+                height: calc(100% - 90px);
+            }
+        }
+    }
+
+    #photosVideos .photo_grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 20rem);
+    }
+    #photosVideos .video_grid {
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
+
+    #programs .program_list_container .programInfo {
+        flex-direction: column;
+
+        .date_area {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            border-right: none !important;
+        }
+
+        .program_title {
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+}
