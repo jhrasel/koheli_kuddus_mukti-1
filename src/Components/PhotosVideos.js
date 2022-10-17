@@ -80,8 +80,8 @@ export default function PhotosVideos() {
                         {[0, 0, 0, 0].map((video, index) => (
                             <iframe
                                 key={index}
-                                width="560"
-                                height="315"
+                                // width="560"
+                                // height="315"
                                 src="https://www.youtube.com/embed/xFha5XgMdHA"
                                 title="YouTube video player"
                                 frameBorder="0"

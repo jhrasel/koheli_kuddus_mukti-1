@@ -1,4 +1,4 @@
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1000px) {
     #banner::after {
         background: linear-gradient(
             360deg,
@@ -55,7 +55,7 @@
     }
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 800px) {
     #introduction {
         flex-direction: column;
         gap: 5rem;
@@ -97,5 +97,15 @@
                 justify-content: center;
             }
         }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #cards {
+        gap: 1rem;
+    }
+    #photosVideos .photo_grid {
+        padding: 0px 0rem;
+        grid-gap: 0.5rem;
     }
 }
