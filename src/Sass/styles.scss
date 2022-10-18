@@ -303,7 +303,7 @@
             }
         }
 
-        .today {
+        .Today {
             background: $pmColor;
             color: #fff;
             position: relative;
@@ -321,7 +321,7 @@
                     rgba(255, 255, 255, 0.6) 50%,
                     rgba(255, 255, 255, 0) 100%
                 );
-                animation: leftAnim 5s ease-in-out alternate infinite;
+                animation: leftAnim 6s ease-in-out alternate infinite;
             }
 
             .date_area {

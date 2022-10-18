@@ -25,7 +25,7 @@ const programList = [
     },
     {
         programTitle: "Opening Ceremony of Mohammadpur high school",
-        date: `${new Date().getDate()} ${monthName[new Date().getMonth()]}`,
+        date: `Today`,
         time: `09 : 10 AM`,
     },
     {
@@ -59,7 +59,7 @@ export default function Programs() {
                 <div className="program_list_container">
                     {programList.map((program, index) => (
                         <div
-                            className={`programInfo ${index === 1 && "today"}`}
+                            className={`programInfo ${program.date}`}
                             key={index}
                         >
                             <div className="date_area">
