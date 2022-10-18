@@ -71,7 +71,7 @@ p {
     font-size: 1.6rem;
     line-height: 2.2rem;
     text-align: justify;
-    color: $headTxtColor;
+    color: $lightTxtColor;
 }
 
 input,
@@ -107,10 +107,11 @@ textarea {
     .section_title {
         color: $headTxtColor;
         font-weight: 700;
-        font-size: 6rem;
-        line-height: 7rem;
+        // font-size: 6rem;
+        font-size: 4.5rem;
+        line-height: 5.5rem;
         position: relative;
-        margin: 1rem 0;
+        margin: 0 0 1rem;
         display: inline-block;
     }
 
@@ -153,7 +154,7 @@ textarea {
 
 .btn_outline {
     @extend .btn;
-    background: #fff;
+    background: none;
     border: 2px solid $pmColor !important;
     color: $pmColor;
 

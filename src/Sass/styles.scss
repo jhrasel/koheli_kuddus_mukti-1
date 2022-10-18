@@ -47,6 +47,8 @@
 #nav.sticky {
     background: $headTxtColor;
 
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.15) 0px 6px 6px;
     .boat_area img {
         width: 5rem;
     }
@@ -122,8 +124,8 @@
         background: #ffffff;
         border: 1px solid rgba(244, 140, 6, 0.3) !important;
         border-radius: 8px;
-        width: 20rem;
-        height: 25rem;
+        width: 22rem;
+        height: 28rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -176,6 +178,7 @@
         p {
             margin: 1.5rem 0 1rem;
             font-size: 1.4rem;
+            color: $headTxtColor;
         }
         b {
             display: block;
@@ -292,6 +295,7 @@
 
             .program_title {
                 color: $lightTxtColor;
+                font-weight: 500;
             }
         }
 
@@ -338,19 +342,12 @@
                 position: relative;
 
                 &:hover {
-                    h6 {
-                        color: #fff;
-                    }
-                    p {
-                        color: #fff;
-                    }
-
                     &::after {
                         content: "";
                         position: absolute;
                         width: 200%;
                         height: 130%;
-                        background: #000;
+                        background: $bgColor;
                         z-index: -1;
                     }
                 }
@@ -381,6 +378,7 @@
                 font-weight: 700;
                 z-index: 1;
                 position: relative;
+                color: $headTxtColor;
             }
 
             // Middle Point
@@ -413,9 +411,6 @@
                     }
                 }
             }
-        }
-        .info_area:hover ~ .season {
-            color: #fff !important;
         }
         .reverse {
             flex-direction: row-reverse;
@@ -520,7 +515,8 @@
         // If Video Button Active
         .videoActive {
             span {
-                left: 50%;
+                width: 60% !important;
+                left: 45%;
             }
             .videosBtn {
                 color: #fff;
@@ -570,7 +566,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 2rem;
-        position: relative;
+
+        .video_wrapper {
+            position: relative;
+        }
 
         .loader_text {
             position: absolute;
@@ -584,6 +583,7 @@
         iframe {
             width: 100%;
             aspect-ratio: 16/9;
+            border: 1px solid $headTxtColor !important;
         }
     }
 
