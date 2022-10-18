@@ -155,12 +155,21 @@
         font-size: 58.5%;
     }
 
+    #nav {
+        padding: 0 1rem;
+    }
+
     #banner .banner_heading {
         bottom: 2rem;
         right: 2rem;
         h1 {
             font-size: 4rem;
         }
+    }
+
+    #cards .card {
+        width: 20rem;
+        height: 18rem;
     }
 
     #political_tour {
@@ -208,7 +217,6 @@
     }
     #photosVideos .video_grid {
         grid-template-columns: 1fr;
-        grid-gap: 1rem;
     }
 
     #social_works .video_area {
