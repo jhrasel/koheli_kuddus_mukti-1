@@ -7,3 +7,28 @@ $lightTxtColor: #787e86;
 
 // Box
 $borderColor: rgba(244, 140, 6, 0.3);
+
+// ANIMATION
+@keyframes scaleOne {
+    // Use in ContactMe .contacts.icon
+    // Use in photosVideos buttons
+    0% {
+        transform: scale(0.7);
+    }
+    // 50% {
+    //     transform: translate(0, 10px);
+    // }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleOneThree {
+    // Use in PoliticalTour .mid_icon
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1.3);
+    }
+}

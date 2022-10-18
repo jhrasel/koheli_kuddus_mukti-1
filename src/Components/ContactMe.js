@@ -66,18 +66,26 @@ export default function ContactMe() {
                 <div className="contacts_area">
                     <div className="contact_options">
                         <div className="contact">
-                            <GoLocation />
-                            <span>
+                            <span className="icon">
+                                <GoLocation />
+                            </span>
+                            <span className="text">
                                 1458/14, Rod- 44 45 Haji Dil Mohammad Ave, Dhaka
                             </span>
                         </div>
                         <div className="contact">
-                            <ImMobile />
-                            <span>(843) 555-0130 (P.S)</span>
+                            <span className="icon">
+                                <ImMobile />
+                            </span>
+                            <span className="text">(843) 555-0130 (P.S)</span>
                         </div>
                         <div className="contact">
-                            <AiOutlineMail />
-                            <span>willie.jennings@example.com (P.S)</span>
+                            <span className="icon">
+                                <AiOutlineMail />
+                            </span>
+                            <span className="text">
+                                willie.jennings@example.com (P.S)
+                            </span>
                         </div>
                     </div>
 

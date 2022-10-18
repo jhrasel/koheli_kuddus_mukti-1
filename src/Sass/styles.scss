@@ -392,6 +392,7 @@
                 background: #ffeed8;
                 border-radius: 50%;
                 position: relative;
+                animation: scaleOneThree 2s linear alternate infinite;
 
                 &::after {
                     content: "";
@@ -403,16 +404,6 @@
                     height: 50%;
                     border-radius: 50%;
                     background: $pmColor;
-                }
-
-                animation: scale 2s linear alternate infinite;
-                @keyframes scale {
-                    from {
-                        transform: scale(0.5);
-                    }
-                    to {
-                        transform: scale(1.3);
-                    }
                 }
             }
         }
@@ -531,6 +522,12 @@
             .photosBtn {
                 color: #fff;
             }
+        }
+        .photosActive .videosBtn {
+            animation: scaleOne 0.5s linear infinite alternate;
+        }
+        .videoActive .photosBtn {
+            animation: scaleOne 0.5s linear infinite alternate;
         }
     }
 
@@ -655,9 +652,12 @@
             font-size: 3rem;
             color: $pmColor;
 
-            span {
+            span.text {
                 font-size: 1.5rem;
                 color: $lightTxtColor;
+            }
+            span.icon {
+                animation: scaleOne 1s ease-in-out infinite alternate;
             }
         }
     }
