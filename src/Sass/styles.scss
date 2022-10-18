@@ -9,6 +9,15 @@
     left: 0;
     z-index: 999;
     //     padding: 0.5rem 0;
+    .sticky {
+        background: $headTxtColor;
+
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+            rgba(0, 0, 0, 0.15) 0px 6px 6px;
+        .boat_area img {
+            width: 5rem;
+        }
+    }
 
     &::after {
         content: "";
@@ -42,15 +51,6 @@
         img {
             width: 7rem;
         }
-    }
-}
-#nav.sticky {
-    background: $headTxtColor;
-
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
-        rgba(0, 0, 0, 0.15) 0px 6px 6px;
-    .boat_area img {
-        width: 5rem;
     }
 }
 /*==============================
