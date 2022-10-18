@@ -7,14 +7,18 @@ import BannerFour from "../Assets/images/Banner/banner-4.jpg";
 
 // Import Swiper React components
 import { Autoplay } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
 import "swiper/css";
-// import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function Banner() {
+    if (window.screen.width <= 600) {
+        console.log(window.screen.width);
+        console.log("Mobile");
+    }
+
     return (
         <section id="banner">
+            {/* SLIDER */}
             <div className="slider_container">
                 <Swiper
                     modules={[Autoplay]}
@@ -38,6 +42,8 @@ export default function Banner() {
                     </SwiperSlide>
                 </Swiper>
             </div>
+
+            {/* BANNER HEADING TEXT WITH BUTTON */}
             <div className="banner_heading">
                 <h1>
                     <Typewriter
