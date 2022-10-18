@@ -59,7 +59,7 @@ export default function Programs() {
                 <div className="program_list_container">
                     {programList.map((program, index) => (
                         <div
-                            className={`programInfo ${index === 1 && "latest"}`}
+                            className={`programInfo ${index === 1 && "today"}`}
                             key={index}
                         >
                             <div className="date_area">
