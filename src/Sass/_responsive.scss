@@ -1,4 +1,9 @@
 @media screen and (max-width: 1000px) {
+    #banner .banner_heading {
+        bottom: 10%;
+        right: 10%;
+        transform: translateY(0);
+    }
     #banner::after {
         background: linear-gradient(
             360deg,
