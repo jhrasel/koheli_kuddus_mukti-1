@@ -434,11 +434,11 @@
         // Middle Line
         .middle_line {
             position: absolute;
-            top: 50px;
+            top: 40px;
             left: 50%;
             transform: translateX(-50%);
             width: 2px;
-            height: calc(100% - 90px);
+            height: calc(100% - 80px);
             background: $pmColor;
         }
     }
