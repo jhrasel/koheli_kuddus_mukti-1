@@ -20,7 +20,7 @@ const programList = [
         // MAXIMUM 70 CHARACTER FOR PROGRAM TITLE
         programTitle:
             "Meeting with Ministry of Environment for socializing lll ssfs sdfjkkl",
-        date: `${new Date().getDate()} ${monthName[new Date().getMonth()]}`,
+        date: `Yesterday`,
         time: `09 : 10 AM`,
     },
     {
