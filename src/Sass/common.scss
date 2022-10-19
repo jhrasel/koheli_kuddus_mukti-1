@@ -141,6 +141,24 @@ textarea {
     background: $pmColor;
     color: #fff;
     transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: "";
+        left: 50%;
+        top: 0;
+        position: absolute;
+        width: 2rem;
+        height: 100%;
+        background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.6) 50%,
+            rgba(255, 255, 255, 0) 100%
+        );
+        animation: leftAnimBtn 4s ease-in-out infinite;
+    }
 
     &:hover {
         transform: scale(1.02);

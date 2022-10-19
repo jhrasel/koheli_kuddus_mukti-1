@@ -15,9 +15,6 @@ $borderColor: rgba(244, 140, 6, 0.3);
     0% {
         transform: scale(0.7);
     }
-    // 50% {
-    //     transform: translate(0, 10px);
-    // }
     100% {
         transform: scale(1);
     }
@@ -40,5 +37,30 @@ $borderColor: rgba(244, 140, 6, 0.3);
     }
     to {
         left: 96%;
+    }
+}
+@keyframes leftAnimBtn {
+    // Use in Common styles .btn
+    0% {
+        left: -10%;
+    }
+    20% {
+        left: 105%;
+    }
+    100% {
+        left: 96%;
+    }
+}
+
+@keyframes threeSixty {
+    // Use in contactMe .social_links
+    0% {
+        transform: rotate(0);
+    }
+    20% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
