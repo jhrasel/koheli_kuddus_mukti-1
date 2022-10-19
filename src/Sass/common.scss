@@ -140,9 +140,10 @@ textarea {
     padding: 1rem 4rem;
     background: $pmColor;
     color: #fff;
-    transition: 0.3s;
+    transition: 0.2s;
     position: relative;
     overflow: hidden;
+    animation: scaleLow 5s infinite;
 
     &::after {
         content: "";
@@ -161,8 +162,8 @@ textarea {
     }
 
     &:hover {
-        transform: scale(1.02);
         background: #dc7f04;
+        animation: none;
     }
 
     &:active {
