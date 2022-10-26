@@ -1,17 +1,17 @@
 @media screen and (max-width: 1000px) {
-    #banner .banner_heading {
-        bottom: 10%;
-        right: 10%;
-        transform: translateY(0);
-    }
-    #banner::after {
-        background: linear-gradient(
-            360deg,
-            rgba(0, 0, 0, 0.77) -15.47%,
-            rgba(0, 0, 0, 0.47) 32.85%,
-            rgba(0, 0, 0, 0) 60.9%
-        );
-    }
+    // #banner .banner_heading {
+    //     bottom: 10%;
+    //     right: 10%;
+    //     transform: translateY(0);
+    // }
+    // #banner::after {
+    //     background: linear-gradient(
+    //         360deg,
+    //         rgba(0, 0, 0, 0.77) -15.47%,
+    //         rgba(0, 0, 0, 0.47) 32.85%,
+    //         rgba(0, 0, 0, 0) 60.9%
+    //     );
+    // }
 
     #introduction {
         padding: 5rem 3rem;
@@ -109,6 +109,38 @@
 }
 
 @media screen and (max-width: 680px) {
+    #banner {
+        height: 40vh;
+
+        &::after {
+            height: 100%;
+        }
+
+        .slider_container {
+            height: 100%;
+            img {
+                height: 40vh;
+            }
+        }
+
+        .container {
+            height: 40vh;
+            .banner_heading {
+                h1 {
+                    max-width: 30rem;
+                    font-size: 2.5rem;
+                    line-height: 3.5rem;
+                    min-height: 12rem;
+                    margin-bottom: 1rem;
+                }
+
+                button {
+                    padding: 0.8rem 2rem;
+                }
+            }
+        }
+    }
+
     #cards {
         gap: 1rem;
     }
@@ -159,13 +191,13 @@
         padding: 0 1rem;
     }
 
-    #banner .banner_heading {
-        bottom: 2rem;
-        right: 2rem;
-        h1 {
-            font-size: 4rem;
-        }
-    }
+    // #banner .banner_heading {
+    //     bottom: 2rem;
+    //     right: 2rem;
+    //     h1 {
+    //         font-size: 4rem;
+    //     }
+    // }
 
     #cards .card {
         width: 20rem;
@@ -264,7 +296,7 @@
 @media screen and (max-width: 400px) {
     #banner .banner_heading {
         h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;
         }
     }
     #social_works {
@@ -293,12 +325,12 @@
     }
 }
 
-@media screen and (max-width: 340px) {
-    #banner .banner_heading {
-        h1 {
-            font-size: 3rem;
-            line-height: 3.5rem;
-            height: 12rem;
-        }
-    }
-}
+// @media screen and (max-width: 340px) {
+//     #banner .banner_heading {
+//         h1 {
+//             font-size: 3rem;
+//             line-height: 3.5rem;
+//             height: 12rem;
+//         }
+//     }
+// }

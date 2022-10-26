@@ -18,6 +18,7 @@ export default function Banner() {
 
     return (
         <section id="banner">
+            {/* <div className="container"> */}
             {/* SLIDER */}
             <div className="slider_container">
                 <Swiper
@@ -43,25 +44,27 @@ export default function Banner() {
                 </Swiper>
             </div>
 
-            {/* BANNER HEADING TEXT WITH BUTTON */}
-            <div className="banner_heading">
-                <h1>
-                    <Typewriter
-                        words={[
-                            // Max 60 character
-                            "আপনাদের দোয়া ও ভালবাসায় জনগনের সেবায় নিবেদিত প্রাণ",
-                            "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-                        ]}
-                        loop={false}
-                        cursor
-                        cursorStyle="_"
-                        typeSpeed={70}
-                        deleteSpeed={50}
-                        delaySpeed={5000}
-                    />
-                </h1>
-                {/* <h1>আপনাদের দোয়া ও ভালবাসায় জনগনের সেবায় নিবেদিত প্রাণ </h1> */}
-                <button className="btn">যোগাযোগ করুন</button>
+            <div className="container">
+                {/* BANNER HEADING TEXT WITH BUTTON */}
+                <div className="banner_heading">
+                    <h1>
+                        <Typewriter
+                            words={[
+                                // Max 60 character
+                                "আপনাদের দোয়া ও ভালবাসায় জনগনের সেবায় নিবেদিত প্রাণ",
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                            ]}
+                            loop={false}
+                            cursor
+                            cursorStyle="_"
+                            typeSpeed={70}
+                            deleteSpeed={50}
+                            delaySpeed={5000}
+                        />
+                    </h1>
+                    {/* <h1>আপনাদের দোয়া ও ভালবাসায় জনগনের সেবায় নিবেদিত প্রাণ </h1> */}
+                    <button className="btn">যোগাযোগ করুন</button>
+                </div>
             </div>
         </section>
     );
