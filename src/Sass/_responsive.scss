@@ -147,9 +147,6 @@
     }
 
     #strength {
-        // margin: 10rem 0;
-        // position: relative;
-
         .section_content {
             padding: 5rem 0 0;
             display: flex;
@@ -158,8 +155,6 @@
 
             .img_area {
                 position: unset;
-                // top: 65;
-                // left: 50%;
                 transform: none;
                 img {
                     width: 100%;
@@ -170,34 +165,14 @@
                 display: flex;
                 flex-direction: column;
                 gap: 3rem;
-                // grid-template-columns: 30% 30%;
-                // justify-content: space-between;
 
                 .strength_Info {
-                    // display: flex;
                     gap: 2rem;
                     max-width: none;
                     margin-bottom: 0;
 
                     b.numbering {
                         margin-top: 3px;
-                        // color: $pmColor;
-                        // font-family: $RobotoCondensed;
-                        // font-size: 2.4rem;
-                        // font-weight: 400;
-                    }
-
-                    .strength_text {
-                        h5 {
-                            // line-height: 3rem;
-                            // font-size: 2.4rem;
-                            // margin-bottom: 1rem;
-                        }
-                        p {
-                            // text-align: left;
-                            font-size: 1.7rem;
-                            // line-height: 2rem;
-                        }
                     }
                 }
             }
@@ -338,19 +313,33 @@
     #programs .container {
         padding: 8rem 1rem;
     }
-    #programs .program_list_container .programInfo {
-        flex-direction: column;
+    #programs .program_list_container {
+        gap: 3rem;
 
-        .date_area {
-            display: flex;
-            justify-content: center;
+        .programInfo {
+            flex-direction: column;
+            padding: 3rem 1rem;
             gap: 2rem;
-            border-right: none !important;
+
+            .date_area {
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+                border-right: none !important;
+            }
+
+            .program_title {
+                border-top: 1px solid #333 !important;
+                padding-top: 2rem;
+                font-size: 2rem;
+                text-align: center;
+            }
         }
 
-        .program_title {
-            font-size: 2rem;
-            text-align: center;
+        .Today {
+            .program_title {
+                border-top: 1.5px solid #fff !important;
+            }
         }
     }
 

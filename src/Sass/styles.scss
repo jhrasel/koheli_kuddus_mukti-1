@@ -302,7 +302,7 @@
             color: $lightTxtColor;
 
             .date_area {
-                min-width: 95px !important;
+                min-width: 110px !important;
                 border-right: 1.5px solid $lightTxtColor !important;
                 padding-right: 1.5rem;
 
@@ -311,6 +311,7 @@
                     text-align: right;
                 }
                 b {
+                    display: block;
                     font-size: 1.8rem;
                     text-align: right !important;
                 }
