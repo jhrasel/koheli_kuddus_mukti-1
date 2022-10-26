@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SocialWorks() {
     return (
-        <div id="social_works">
+        <section id="social_works">
             <div className="section_text">
                 <h2 className="bn">আমার সামাজিক কর্মকান্ড</h2>
                 <p>
@@ -23,6 +23,6 @@ export default function SocialWorks() {
                     allowFullScreen
                 ></iframe>
             </div>
-        </div>
+        </section>
     );
 }

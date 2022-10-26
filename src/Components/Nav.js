@@ -19,7 +19,11 @@ export default function Nav() {
     }, [sticky]);
 
     return (
-        <nav id="nav" className={sticky && "sticky"}>
+        <nav
+            // style={{ width: window.screen.width }}
+            id="nav"
+            className={sticky && "sticky"}
+        >
             <div className="container">
                 <div className="logo_container">
                     <Link to={"/"}>

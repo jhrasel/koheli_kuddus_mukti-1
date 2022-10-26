@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
     return (
-        <div id="footer">
+        <footer id="footer">
             <div className="container">
                 <div className="copyrights">
                     <span>Copyright © 2022</span>
@@ -10,6 +10,6 @@ export default function Footer() {
                 </div>
                 <div className="rights">All rights reserved!</div>
             </div>
-        </div>
+        </footer>
     );
 }

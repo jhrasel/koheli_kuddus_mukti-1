@@ -79,6 +79,8 @@
 
         img {
             margin: 0 auto;
+            max-width: 30rem;
+            width: 100%;
         }
     }
 
@@ -167,7 +169,7 @@
         }
 
         .container {
-            height: 40vh;
+            height: 100%;
             .banner_heading {
                 h1 {
                     max-width: 30rem;

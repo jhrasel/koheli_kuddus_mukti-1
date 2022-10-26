@@ -3,7 +3,8 @@
         NAV
  ==============================*/
 #nav {
-    position: fixed;
+    // position: fixed;
+    display: none;
     width: 100%;
     top: 0;
     left: 0;
@@ -24,23 +25,19 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
 
-    .logo_container {
-        z-index: 99;
-        display: flex;
-        gap: 1rem;
-        align-items: center;
-
-        img {
-            width: 20rem;
+        .logo_container {
+            z-index: 99;
+            img {
+                width: 20rem;
+            }
         }
-    }
 
-    .boat_area {
-        z-index: 99;
-        img {
-            width: 5rem;
+        .boat_area {
+            z-index: 99;
+            img {
+                width: 5rem;
+            }
         }
     }
 }
