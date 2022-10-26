@@ -30,12 +30,12 @@ const programList = [
     },
     {
         programTitle: "Opening Ceremony of Mohammadpur high school",
-        date: `${new Date().getDate()} ${monthName[new Date().getMonth()]}`,
+        date: `Tommorow`,
         time: `09 : 10 AM`,
     },
     {
         programTitle: "Opening Ceremony of Mohammadpur high school",
-        date: `${new Date().getDate()} ${monthName[new Date().getMonth()]}`,
+        date: `${new Date().getDate() + 2} ${monthName[new Date().getMonth()]}`,
         time: `09 : 10 AM`,
     },
 ];
