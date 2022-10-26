@@ -635,6 +635,7 @@
         display: flex;
         gap: 4rem;
     }
+
     form {
         width: 40%;
         max-width: 45rem;
@@ -651,11 +652,11 @@
             background: #f5f5f5;
             resize: none;
             width: 100% !important;
-            // color: $pmColor;
             color: #000;
             border: 1px solid #e8e8e8 !important;
             font-size: 1.6rem;
-            border-radius: 5px;
+            // color: $pmColor;
+            // border-radius: 5px;
 
             &:focus {
                 border: 1px solid $pmColor !important;
