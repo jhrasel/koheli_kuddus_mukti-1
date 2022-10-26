@@ -32,7 +32,7 @@ export default function Strength() {
     return (
         <section id="strength">
             <div className="section_heading_container">
-                <h2 className="section_title">আমার শক্তি</h2>
+                <h2 className="section_title bn">আমার শক্তি</h2>
                 <p className="section_description">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
@@ -47,9 +47,9 @@ export default function Strength() {
                 <div className="strength_Info_container">
                     {strengthInfo.map((strg, index) => (
                         <div className="strength_Info" key={index + 1}>
-                            <b>{`0${index + 1}`}</b>
+                            <b className="numbering">{`0${index + 1}`}</b>
                             <div className="strength_text">
-                                <h5>{strg.title}</h5>
+                                <h5 className="bn">{strg.title}</h5>
                                 <p>{strg.desc}</p>
                             </div>
                         </div>

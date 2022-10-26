@@ -1,3 +1,19 @@
+// ========== Fonts ==========
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,500&display=swap");
+
+$RobotoCondensed: "Roboto Condensed", sans-serif;
+
+$Roboto: "Roboto", sans-serif;
+
+@font-face {
+    font-family: siyamRupali;
+    src: url(../Assets/Fonts/Siyamrupali.ttf);
+}
+
+.bn {
+    font-family: siyamRupali, Roboto;
+}
+
 // ========== Colors ==========
 $pmColor: #f48c06;
 $bgColor: #fff1df;

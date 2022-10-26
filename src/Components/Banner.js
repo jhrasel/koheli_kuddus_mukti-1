@@ -47,7 +47,7 @@ export default function Banner() {
             <div className="container">
                 {/* BANNER HEADING TEXT WITH BUTTON */}
                 <div className="banner_heading">
-                    <h1>
+                    <h1 className="bn">
                         <Typewriter
                             words={[
                                 // Max 60 character

@@ -116,9 +116,9 @@
 
         h1 {
             color: #fff;
-            min-height: 16rem;
-            font-size: 4.5rem;
-            line-height: 5.5rem;
+            min-height: 18rem;
+            font-size: 5rem;
+            line-height: 6rem;
             margin-bottom: 2rem;
         }
 
@@ -228,6 +228,7 @@
                 width: 28rem;
             }
         }
+
         .strength_Info_container {
             display: grid;
             grid-template-columns: 30% 30%;
@@ -239,9 +240,11 @@
                 max-width: 30rem;
                 margin-bottom: 4rem;
 
-                b {
+                b.numbering {
                     color: $pmColor;
+                    font-family: $RobotoCondensed;
                     font-size: 2rem;
+                    font-weight: 400;
                 }
 
                 .strength_text {
@@ -288,30 +291,35 @@
     .program_list_container {
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 2rem;
 
         .programInfo {
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 1.5rem;
             padding: 2rem;
             background: #fff;
             color: $lightTxtColor;
 
             .date_area {
+                min-width: 95px !important;
                 border-right: 1.5px solid $lightTxtColor !important;
                 padding-right: 1.5rem;
+
                 p {
                     color: $lightTxtColor;
                     text-align: right;
                 }
                 b {
                     font-size: 1.8rem;
+                    text-align: right !important;
                 }
             }
 
             .program_title {
                 color: $lightTxtColor;
+                font-size: 1.8rem;
+                // font-family: roboto, san-sarif;
                 font-weight: 500;
             }
         }

@@ -19,7 +19,7 @@ const programList = [
     {
         // MAXIMUM 70 CHARACTER FOR PROGRAM TITLE
         programTitle:
-            "Meeting with Ministry of Environment for socializing lll ssfs sdfjkkl",
+            "Meeting with Ministry of Environment for socializing lll ssfs sdfjkkl efsdfo fsdfsdffs ffsdsd ",
         date: `Yesterday`,
         time: `09 : 10 AM`,
     },
@@ -45,7 +45,7 @@ export default function Programs() {
         <section id="programs">
             <div className="container">
                 <div className="section_text">
-                    <h2>আমার আসন্ন প্রোগ্রামসমুহ</h2>
+                    <h2 className="bn">আমার আসন্ন প্রোগ্রামসমুহ</h2>
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the
