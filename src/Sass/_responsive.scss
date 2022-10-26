@@ -207,9 +207,20 @@
     //     }
     // }
 
-    #cards .card {
-        width: 20rem;
-        height: 18rem;
+    #cards {
+        gap: 2rem !important;
+        .card {
+            width: 30rem;
+            height: 20rem;
+
+            img {
+                width: 8rem;
+                // margin-bottom: 3rem;
+            }
+            p {
+                font-size: 2rem;
+            }
+        }
     }
 
     #political_tour {
