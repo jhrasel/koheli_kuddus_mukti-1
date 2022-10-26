@@ -127,14 +127,15 @@
             height: 40vh;
             .banner_heading {
                 h1 {
-                    max-width: 30rem;
+                    max-width: 33rem;
                     font-size: 2.5rem;
-                    line-height: 3.5rem;
-                    min-height: 12rem;
+                    line-height: 3rem;
+                    min-height: 10rem;
                     margin-bottom: 1rem;
                 }
 
                 button {
+                    font-size: 1.5rem;
                     padding: 0.8rem 2rem;
                 }
             }
