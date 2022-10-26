@@ -38,7 +38,7 @@ export default function ContactMe() {
                 {/* FORM */}
                 <form action="#" method="post" onSubmit={handleSubmit}>
                     <h6>যোগাযোগ</h6>
-                    
+
                     <input
                         type="text"
                         placeholder="নাম"

@@ -32,7 +32,7 @@ export default function Strength() {
     return (
         <section id="strength">
             <div className="section_heading_container">
-                <h2 className="section_title bn">আমার শক্তি</h2>
+                <h2 className="section_title">আমার শক্তি</h2>
                 <p className="section_description">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's

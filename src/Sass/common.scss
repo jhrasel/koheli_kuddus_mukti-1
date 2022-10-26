@@ -108,6 +108,7 @@ textarea {
     .section_title {
         color: $headTxtColor;
         font-weight: 700;
+        font-family: siyamRupali;
         // font-size: 4.5rem;
         font-size: 5.2rem;
         line-height: 6rem;
@@ -144,6 +145,7 @@ textarea {
     color: #fff;
     transition: 0.2s;
     position: relative;
+    font-family: siyamRupali;
     overflow: hidden;
     animation: scaleLow 5s infinite;
 

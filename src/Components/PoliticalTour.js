@@ -44,7 +44,7 @@ export default function PoliticalTour() {
     return (
         <section id="political_tour">
             <div className="section_heading_container">
-                <h2 className="section_title bn">আমার রাজনীতিক যাত্রা</h2>
+                <h2 className="section_title">আমার রাজনীতিক যাত্রা</h2>
                 <p className="section_description">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
@@ -73,7 +73,7 @@ export default function PoliticalTour() {
 
                             <div className="mid_icon">{/* Middle Point */}</div>
 
-                            <div className="season">{info.season}</div>
+                            <div className="season bn">{info.season}</div>
                         </div>
                     ))}
                 </div>

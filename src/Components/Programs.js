@@ -45,7 +45,7 @@ export default function Programs() {
         <section id="programs">
             <div className="container">
                 <div className="section_text">
-                    <h2 className="bn">আমার আসন্ন প্রোগ্রামসমুহ</h2>
+                    <h2>আমার আসন্ন প্রোগ্রামসমুহ</h2>
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the

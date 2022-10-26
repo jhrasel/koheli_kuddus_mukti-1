@@ -177,7 +177,7 @@
  ==============================*/
 #introduction {
     background: $bgColor;
-
+    font-family: siyamRupali;
     padding: 10rem;
     display: flex;
     gap: 4rem;
@@ -282,6 +282,7 @@
         h2 {
             font-size: 4.5rem;
             line-height: 5rem;
+            font-family: siyamRupali;
         }
         p {
             margin: 1rem 0 3rem;
@@ -540,6 +541,7 @@
             button {
                 background: none;
                 padding: 1rem 4rem;
+                font-family: siyamRupali;
                 // font-weight: 700;
                 font-size: 1.8rem;
                 cursor: pointer;
@@ -655,6 +657,7 @@
         align-items: flex-start;
         padding: 4rem;
         gap: 20px;
+        font-family: siyamRupali;
 
         h6 {
             font-weight: 400;
@@ -672,6 +675,7 @@
             color: #000;
             border: 1px solid #e8e8e8 !important;
             font-size: 1.6rem;
+            font-family: siyamRupali;
             // color: $pmColor;
             // border-radius: 5px;
 

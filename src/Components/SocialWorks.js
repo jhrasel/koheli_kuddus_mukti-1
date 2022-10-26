@@ -4,7 +4,7 @@ export default function SocialWorks() {
     return (
         <div id="social_works">
             <div className="section_text">
-                <h2>আমার সামাজিক কর্মকান্ড</h2>
+                <h2 className="bn">আমার সামাজিক কর্মকান্ড</h2>
                 <p>
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
