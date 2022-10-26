@@ -146,14 +146,73 @@
         gap: 1rem;
     }
 
-    #strength .section_content {
-        .strength_Info_container .strength_Info {
-            display: block;
-        }
-        .img_area img {
-            width: 15rem;
+    #strength {
+        // margin: 10rem 0;
+        // position: relative;
+
+        .section_content {
+            padding: 5rem 0 0;
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 5rem;
+
+            .img_area {
+                position: unset;
+                // top: 65;
+                // left: 50%;
+                transform: none;
+                img {
+                    width: 100%;
+                }
+            }
+
+            .strength_Info_container {
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+                // grid-template-columns: 30% 30%;
+                // justify-content: space-between;
+
+                .strength_Info {
+                    // display: flex;
+                    gap: 2rem;
+                    max-width: none;
+                    margin-bottom: 0;
+
+                    b.numbering {
+                        margin-top: 3px;
+                        // color: $pmColor;
+                        // font-family: $RobotoCondensed;
+                        // font-size: 2.4rem;
+                        // font-weight: 400;
+                    }
+
+                    .strength_text {
+                        h5 {
+                            // line-height: 3rem;
+                            // font-size: 2.4rem;
+                            // margin-bottom: 1rem;
+                        }
+                        p {
+                            // text-align: left;
+                            font-size: 1.7rem;
+                            // line-height: 2rem;
+                        }
+                    }
+                }
+            }
         }
     }
+
+    // #strength .section_content {
+    //     .strength_Info_container .strength_Info {
+    //         display: block;
+    //     }
+    //     .img_area img {
+    //         width: 15rem;
+    //     }
+    // }
+
     #political_tour .political_tour_info_container .political_tour_info {
         gap: 1.5rem;
     }
@@ -184,9 +243,9 @@
         PHONE SCREEN
  ==============================*/
 @media screen and (max-width: 570px) {
-    html {
-        font-size: 58.5%;
-    }
+    // html {
+    //     font-size: 58.5%;
+    // }
 
     #nav.sticky {
         padding: 1.5rem 0;
@@ -255,12 +314,12 @@
         }
     }
 
-    #strength .section_content .img_area img {
-        width: 10rem;
-    }
-    #strength .section_content .strength_Info_container {
-        grid-template-columns: 33% 33%;
-    }
+    // #strength .section_content .img_area img {
+    //     width: 10rem;
+    // }
+    // #strength .section_content .strength_Info_container {
+    //     grid-template-columns: 33% 33%;
+    // }
 
     #photosVideos .photo_grid {
         grid-template-columns: 1fr;
@@ -313,11 +372,11 @@
 }
 
 @media screen and (max-width: 400px) {
-    #banner .banner_heading {
-        h1 {
-            font-size: 3rem;
-        }
-    }
+    // #banner .banner_heading {
+    //     h1 {
+    //         font-size: 3rem;
+    //     }
+    // }
     #social_works {
         padding: 6rem 1rem;
     }
@@ -328,21 +387,21 @@
         }
     }
 
-    #political_tour .political_tour_info_container .middle_line {
-        // top: 70px;
-        left: 31%;
-        // height: calc(100% - 130px);
-    }
-    #political_tour .political_tour_info_container .political_tour_info {
-        gap: 1rem;
-    }
+    // #political_tour .political_tour_info_container .middle_line {
+    //     // top: 70px;
+    //     left: 31%;
+    //     // height: calc(100% - 130px);
+    // }
+    // #political_tour .political_tour_info_container .political_tour_info {
+    //     gap: 1rem;
+    // }
 }
 
-@media screen and (max-width: 389px) {
-    #political_tour .political_tour_info_container .middle_line {
-        display: none;
-    }
-}
+// @media screen and (max-width: 389px) {
+//     #political_tour .political_tour_info_container .middle_line {
+//         display: none;
+//     }
+// }
 
 // @media screen and (max-width: 340px) {
 //     #banner .banner_heading {
