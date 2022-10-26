@@ -72,7 +72,7 @@ p {
     font-size: 1.6rem;
     line-height: 2.2rem;
     text-align: justify;
-    color: $lightTxtColor;
+    color: $paraColor;
 }
 
 input,
@@ -108,17 +108,17 @@ textarea {
     .section_title {
         color: $headTxtColor;
         font-weight: 700;
-        font-family: siyamRupali;
+        font-family: SiyamRupali;
         // font-size: 4.5rem;
         font-size: 5.2rem;
-        line-height: 6rem;
+        line-height: 6.5rem;
         position: relative;
         margin: 0 0 1rem;
         display: inline-block;
     }
 
     p.section_description {
-        color: $lightTxtColor;
+        color: $paraColor;
         text-align: center;
         line-height: 2.5rem;
     }
@@ -146,7 +146,7 @@ textarea {
     color: #fff;
     transition: 0.2s;
     position: relative;
-    font-family: siyamRupali;
+    font-family: SiyamRupali;
     overflow: hidden;
     animation: scaleLow 5s infinite;
 
@@ -181,6 +181,7 @@ textarea {
     background: none;
     border: 2px solid $pmColor !important;
     color: $pmColor;
+    padding: 1rem 3rem;
 
     &:hover {
         transform: scale(1);
@@ -192,20 +193,3 @@ textarea {
         transform: scale(0.9);
     }
 }
-
-/*==============================
-        BOX
- ==============================*/
-// .box {
-//     border: 1px solid $borderColor !important;
-//     box-shadow: $boxShadow;
-//     text-align: center;
-//     border-radius: 3px;
-//     transition: box-shadow 0.3s;
-//     overflow: hidden;
-
-//     &:hover {
-//         // transform: scale(1.05);
-//         box-shadow: 0px 0px 20px 5px #eee;
-//     }
-// }

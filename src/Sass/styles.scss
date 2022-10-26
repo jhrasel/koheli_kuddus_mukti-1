@@ -173,7 +173,7 @@
  ==============================*/
 #introduction {
     background: $bgColor;
-    font-family: siyamRupali;
+    font-family: SiyamRupali;
     padding: 10rem;
     display: flex;
     gap: 4rem;
@@ -199,7 +199,7 @@
             margin-top: 2rem !important;
         }
         span {
-            color: $lightTxtColor;
+            color: $paraColor;
             font-size: 1.4rem;
         }
     }
@@ -278,7 +278,7 @@
         h2 {
             font-size: 4.5rem;
             line-height: 5rem;
-            font-family: siyamRupali;
+            font-family: SiyamRupali;
         }
         p {
             margin: 1rem 0 3rem;
@@ -296,15 +296,15 @@
             gap: 1.5rem;
             padding: 2rem;
             background: #fff;
-            color: $lightTxtColor;
+            color: $paraColor;
 
             .date_area {
                 min-width: 110px !important;
-                border-right: 1.5px solid $lightTxtColor !important;
+                border-right: 1.5px solid $paraColor !important;
                 padding-right: 1.5rem;
 
                 p {
-                    color: $lightTxtColor;
+                    color: $paraColor;
                     text-align: right;
                 }
                 b {
@@ -315,7 +315,7 @@
             }
 
             .program_title {
-                color: $lightTxtColor;
+                color: $paraColor;
                 font-size: 1.8rem;
                 // font-family: roboto, san-sarif;
                 font-weight: 500;
@@ -519,7 +519,7 @@
             display: inline-block;
             border-radius: 50px;
             overflow: hidden;
-            border: 1px solid $lightTxtColor !important;
+            border: 1px solid $paraColor !important;
             padding: 1px;
 
             span {
@@ -537,7 +537,7 @@
             button {
                 background: none;
                 padding: 1rem 4rem;
-                font-family: siyamRupali;
+                font-family: SiyamRupali;
                 // font-weight: 700;
                 font-size: 1.8rem;
                 cursor: pointer;
@@ -653,7 +653,7 @@
         align-items: flex-start;
         padding: 4rem;
         gap: 20px;
-        font-family: siyamRupali;
+        font-family: SiyamRupali;
 
         h6 {
             font-weight: 400;
@@ -671,7 +671,7 @@
             color: #000;
             border: 1px solid #e8e8e8 !important;
             font-size: 1.6rem;
-            font-family: siyamRupali;
+            font-family: SiyamRupali;
             // color: $pmColor;
             // border-radius: 5px;
 
@@ -704,7 +704,7 @@
 
             span.text {
                 font-size: 1.5rem;
-                color: $lightTxtColor;
+                color: $paraColor;
             }
             span.icon {
                 animation: scaleOne 1s ease-in-out infinite alternate;

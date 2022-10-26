@@ -130,7 +130,7 @@
                     width: 100%;
                     text-align: right;
                     padding-right: 9rem;
-                    color: $lightTxtColor;
+                    color: $paraColor;
                 }
 
                 // Middle Point
@@ -224,15 +224,6 @@
         }
     }
 
-    // #strength .section_content {
-    //     .strength_Info_container .strength_Info {
-    //         display: block;
-    //     }
-    //     .img_area img {
-    //         width: 15rem;
-    //     }
-    // }
-
     #social_works .video_area {
         iframe {
             width: 500px !important;
@@ -261,7 +252,7 @@
     // }
 
     #nav.sticky {
-        padding: 1.5rem 0;
+        padding: 1rem 0;
 
         .logo_container img {
             width: 16rem;
@@ -270,14 +261,6 @@
             width: 4rem;
         }
     }
-
-    // #banner .banner_heading {
-    //     bottom: 2rem;
-    //     right: 2rem;
-    //     h1 {
-    //         font-size: 4rem;
-    //     }
-    // }
 
     #cards {
         gap: 2rem !important;
@@ -295,48 +278,8 @@
         }
     }
 
-    // #political_tour {
-    //     .political_tour_info_container {
-    //         .political_tour_info {
-    //             flex-direction: row-reverse;
-    //             gap: 1.5rem;
-
-    //             .info_area {
-    //                 flex-direction: row-reverse;
-    //                 width: 70%;
-
-    //                 .text_area {
-    //                     text-align: left;
-    //                     p {
-    //                         text-align: left;
-    //                     }
-    //                 }
-    //             }
-
-    //             .season {
-    //                 width: 30%;
-    //                 text-align: right;
-    //             }
-
-    //             // Middle Point
-    //             .mid_icon {
-    //                 width: 1.5rem;
-    //                 height: 1.5rem;
-    //             }
-    //         }
-    //     }
-    // }
-
-    // #strength .section_content .img_area img {
-    //     width: 10rem;
-    // }
-    // #strength .section_content .strength_Info_container {
-    //     grid-template-columns: 33% 33%;
-    // }
-
     #photosVideos .photo_grid {
         grid-template-columns: 1fr;
-        // grid-template-rows: repeat(5, 20rem);
     }
     #photosVideos .video_grid {
         grid-template-columns: 1fr;
@@ -404,11 +347,6 @@
 }
 
 @media screen and (max-width: 400px) {
-    // #banner .banner_heading {
-    //     h1 {
-    //         font-size: 3rem;
-    //     }
-    // }
     #social_works {
         padding: 6rem 1rem;
     }

@@ -8,12 +8,12 @@ $Roboto: "Roboto", sans-serif;
 
 // Bangla Font
 @font-face {
-    font-family: siyamRupali;
+    font-family: SiyamRupali;
     src: url("../Assets/Fonts/Siyamrupali.ttf");
 }
 
 .bn {
-    font-family: siyamRupali, Roboto;
+    font-family: SiyamRupali, Roboto;
 }
 
 /*==============================
@@ -23,10 +23,7 @@ $pmColor: #f48c06;
 $bgColor: #fff1df;
 
 $headTxtColor: #333;
-$lightTxtColor: #787e86;
-
-// Border Color
-$borderColor: rgba(244, 140, 6, 0.3);
+$paraColor: #787e86;
 
 /*==============================
         ANIMATIONS
