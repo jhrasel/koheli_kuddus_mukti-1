@@ -8,7 +8,7 @@ export default function Nav() {
     useEffect(() => {
         // console.log(window.scrollBy(0, 1000));
         window.addEventListener("scroll", function () {
-            if (window.scrollY > 500) {
+            if (window.scrollY > 200) {
                 console.log(window.scrollY);
                 console.log(sticky);
                 setSticky(true);
