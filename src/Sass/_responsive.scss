@@ -299,8 +299,8 @@
 
         .programInfo {
             flex-direction: column;
-            padding: 3rem 1rem;
-            gap: 2rem;
+            padding: 2rem 1rem;
+            gap: 1.5rem;
 
             .date_area {
                 display: flex;
@@ -316,8 +316,9 @@
 
             .program_title {
                 border-top: 1px solid #333 !important;
-                padding-top: 2rem;
+                padding-top: 1.5rem;
                 font-size: 2rem;
+                line-height: 2.6rem;
                 text-align: center;
             }
         }
