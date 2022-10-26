@@ -521,9 +521,9 @@
                 transition: 0.4s;
                 position: absolute;
                 left: 0;
-                top: 0.5px;
+                top: 0;
                 width: 50%;
-                height: 100%;
+                height: calc(100%);
                 background: $pmColor;
                 z-index: -1;
             }
@@ -647,6 +647,14 @@
         padding: 4rem;
         gap: 20px;
 
+        h6 {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            text-align: center;
+            align-self: center;
+        }
+
         input,
         textarea {
             background: #f5f5f5;
@@ -711,7 +719,7 @@
 
         a {
             color: $pmColor;
-            animation: threeSixty 3s infinite alternate;
+            // animation: threeSixty 3s infinite alternate;
         }
     }
 }

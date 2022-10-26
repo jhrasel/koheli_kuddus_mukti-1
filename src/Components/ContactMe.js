@@ -37,6 +37,8 @@ export default function ContactMe() {
             <div className="section_content">
                 {/* FORM */}
                 <form action="#" method="post" onSubmit={handleSubmit}>
+                    <h6>যোগাযোগ</h6>
+                    
                     <input
                         type="text"
                         placeholder="নাম"
