@@ -1,10 +1,12 @@
-// ========== Fonts ==========
+/*==============================
+        FONTS
+ ==============================*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,500&display=swap");
 
 $RobotoCondensed: "Roboto Condensed", sans-serif;
-
 $Roboto: "Roboto", sans-serif;
 
+// Bangla Font
 @font-face {
     font-family: siyamRupali;
     src: url("../Assets/Fonts/Siyamrupali.ttf");
@@ -14,17 +16,21 @@ $Roboto: "Roboto", sans-serif;
     font-family: siyamRupali, Roboto;
 }
 
-// ========== Colors ==========
+/*==============================
+        COLORS
+ ==============================*/
 $pmColor: #f48c06;
 $bgColor: #fff1df;
 
 $headTxtColor: #333;
 $lightTxtColor: #787e86;
 
-// Box
+// Border Color
 $borderColor: rgba(244, 140, 6, 0.3);
 
-// ======== ANIMATIONS ========
+/*==============================
+        ANIMATIONS
+ ==============================*/
 @keyframes scaleOne {
     // Use in ContactMe .contacts.icon
     // Use in photosVideos buttons
