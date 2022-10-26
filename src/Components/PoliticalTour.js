@@ -43,6 +43,7 @@ const PoliticalTourInfo = [
 export default function PoliticalTour() {
     return (
         <section id="political_tour">
+            {/* <div className="container"> */}
             <div className="section_heading_container">
                 <h2 className="section_title">আমার রাজনীতিক যাত্রা</h2>
                 <p className="section_description">
@@ -78,6 +79,7 @@ export default function PoliticalTour() {
                     ))}
                 </div>
             </div>
+            {/* </div> */}
         </section>
     );
 }
