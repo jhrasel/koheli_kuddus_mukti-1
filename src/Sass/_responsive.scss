@@ -49,13 +49,21 @@
 
     #contactMe {
         .section_content {
-            gap: 2rem;
+            flex-direction: column;
+            gap: 7rem;
+            margin: 3rem 0;
         }
         form {
-            width: 50%;
+            width: 100%;
+            max-width: 55rem;
+            margin: auto;
         }
         .contacts_area {
-            width: 50%;
+            width: 100%;
+
+            .social_links {
+                justify-content: center;
+            }
         }
     }
 }
@@ -85,25 +93,6 @@
     #political_tour .political_tour_info_container .political_tour_info {
         .info_area {
             gap: 1rem;
-        }
-    }
-
-    #contactMe {
-        .section_content {
-            flex-direction: column;
-            gap: 7rem;
-        }
-        form {
-            width: 100%;
-            max-width: 55rem;
-            margin: auto;
-        }
-        .contacts_area {
-            width: 100%;
-
-            .social_links {
-                justify-content: center;
-            }
         }
     }
 }
@@ -427,7 +416,12 @@
             aspect-ratio: 16/9;
         }
     }
-
+    #social_works .video_area {
+        iframe {
+            width: 300px !important;
+            aspect-ratio: 16/9;
+        }
+    }
     // #political_tour .political_tour_info_container .middle_line {
     //     // top: 70px;
     //     left: 31%;

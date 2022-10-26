@@ -748,10 +748,18 @@
         gap: 5px;
         margin-bottom: 5px;
 
+        span {
+            font-family: $RobotoCondensed;
+        }
+
         h6 {
             font-size: 1.6rem;
             color: $pmColor;
         }
+    }
+
+    .rights {
+        font-family: $RobotoCondensed;
     }
 }
 
