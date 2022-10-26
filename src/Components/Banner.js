@@ -52,7 +52,6 @@ export default function Banner() {
                             words={[
                                 // Max 60 character
                                 "আপনাদের দোয়া ও ভালবাসায় জনগনের সেবায় নিবেদিত প্রাণ",
-                                "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                             ]}
                             loop={false}
                             cursor

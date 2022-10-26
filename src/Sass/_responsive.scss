@@ -1,3 +1,16 @@
+/*==============================
+        LAPTOP SCREEN - 14 INCH
+ ==============================*/
+@media screen and (max-width: 1300px) {
+    #nav.sticky {
+        padding: 0;
+    }
+    #banner .banner_heading h1 {
+        font-size: 5rem;
+        line-height: 6rem;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     // #banner .banner_heading {
     //     bottom: 10%;
