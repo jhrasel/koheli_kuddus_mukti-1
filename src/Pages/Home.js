@@ -1,5 +1,4 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Banner from "../Components/Banner";
 import Cards from "../Components/Cards";
 import ContactMe from "../Components/ContactMe";
@@ -10,25 +9,8 @@ import Programs from "../Components/Programs";
 import SocialWorks from "../Components/SocialWorks";
 import Strength from "../Components/Strength";
 
-export default function Home() {
-  const [appSettings, setAppSettings] = useState({});
-
-  async function callAPI() {
-    try {
-      const response = await axios.get(
-        "http://koheli.sscquizcontest.com/api/application-settings"
-      );
-
-      setAppSettings(response.data.data);
-    } catch (error) {
-      //   setAppSettings({});
-    }
-  }
-
-  useEffect(() => {
-    callAPI();
-  }, [appSettings]);
-
+export default function Home({ appSettings }) {
+  //   console.log(appSettings);
   return (
     <>
       <Banner />

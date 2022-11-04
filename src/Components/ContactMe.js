@@ -11,7 +11,7 @@ import { ImMobile } from "react-icons/im";
 export default function ContactMe({ appSettings }) {
   const [mail, setMail] = useState({ name: "", email: "", message: "" });
 
-  console.log(appSettings);
+  //   console.log(appSettings);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -73,7 +73,7 @@ export default function ContactMe({ appSettings }) {
               </span>
               <span className="text">
                 {/* {appSettings.app_address} */}
-                {appSettings.app_address
+                {appSettings?.app_address
                   ? appSettings.app_address
                   : "Not Available"}
               </span>
@@ -83,7 +83,7 @@ export default function ContactMe({ appSettings }) {
                 <ImMobile />
               </span>
               <span className="text">
-                {appSettings.app_phone
+                {appSettings?.app_phone
                   ? appSettings.app_phone
                   : "Not Available"}
               </span>
@@ -93,7 +93,7 @@ export default function ContactMe({ appSettings }) {
                 <AiOutlineMail />
               </span>
               <span className="text">
-                {appSettings.app_email
+                {appSettings?.app_email
                   ? appSettings.app_email
                   : "Not Available"}
               </span>
