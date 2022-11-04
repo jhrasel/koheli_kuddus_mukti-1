@@ -3,39 +3,39 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none !important;
-    outline: none !important;
-    text-decoration: none !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none !important;
+  outline: none !important;
+  text-decoration: none !important;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-    // font-family: $RobotoCondensed;
-    font-family: $Roboto !important;
-    color: #000;
-    font-size: 1.6rem;
-    line-height: 2rem;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  // font-family: $RobotoCondensed;
+  font-family: $Roboto !important;
+  color: #000;
+  font-size: 1.6rem;
+  line-height: 2rem;
 }
 
 section,
 header,
 footer {
-    width: 100%;
-    clear: both;
+  width: 100%;
+  clear: both;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 h1,
@@ -44,18 +44,18 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
-    color: $headTxtColor;
-    // line-height: 4rem;
+  margin: 0;
+  color: $headTxtColor;
+  // line-height: 4rem;
 }
 
 a {
-    color: none;
-    text-decoration: none;
+  color: none;
+  text-decoration: none;
 
-    &:hover {
-        color: none;
-    }
+  &:hover {
+    color: none;
+  }
 }
 
 button,
@@ -64,132 +64,132 @@ input,
 input:focus,
 textarea,
 textarea:focus {
-    outline: 0;
-    outline-offset: 0;
+  outline: 0;
+  outline-offset: 0;
 }
 
 p {
-    font-size: 1.6rem;
-    line-height: 2.2rem;
-    text-align: justify;
-    color: $paraColor;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  text-align: justify;
+  color: $paraColor;
 }
 
 input,
 textarea {
-    width: 100%;
-    background: #222222;
-    color: #fff;
-    border: 0;
-    margin: 0.5rem 0;
-    padding: 1rem;
+  width: 100%;
+  background: #222222;
+  color: #fff;
+  border: 0;
+  margin: 0.5rem 0;
+  padding: 1rem;
 
-    &:focus {
-        outline: 1px solid $pmColor;
-    }
+  &:focus {
+    outline: 1px solid $pmColor;
+  }
 }
 
 /*==============================
         CONTAINER
  ==============================*/
 .container {
-    max-width: 1100px;
-    width: 90%;
-    margin: 0 auto;
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 /*==============================
         SECTOION HEADING
  ==============================*/
 .section_heading_container {
-    margin: 0 auto;
+  margin: 0 auto;
+  text-align: center;
+
+  .section_title {
+    color: $headTxtColor;
+    font-weight: 700;
+    font-family: SiyamRupali;
+    // font-size: 4.5rem;
+    font-size: 5.2rem;
+    line-height: 6.5rem;
+    position: relative;
+    margin: 0 0 1rem;
+    display: inline-block;
+  }
+
+  p.section_description {
+    color: $paraColor;
     text-align: center;
-
-    .section_title {
-        color: $headTxtColor;
-        font-weight: 700;
-        font-family: SiyamRupali;
-        // font-size: 4.5rem;
-        font-size: 5.2rem;
-        line-height: 6.5rem;
-        position: relative;
-        margin: 0 0 1rem;
-        display: inline-block;
-    }
-
-    p.section_description {
-        color: $paraColor;
-        text-align: center;
-        line-height: 2.5rem;
-    }
+    line-height: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .section_heading_container {
-        .section_title {
-            font-size: 4.5rem;
-            line-height: 5rem;
-        }
+  .section_heading_container {
+    .section_title {
+      font-size: 4.5rem;
+      line-height: 5rem;
     }
+  }
 }
 
 /*==============================
         BUTTONS
  ==============================*/
 .btn {
-    cursor: pointer;
-    font-size: 1.7rem;
-    font-weight: 600;
-    border-radius: 50px;
-    padding: 1rem 4rem;
-    background: $pmColor;
-    color: #fff;
-    transition: 0.2s;
-    position: relative;
-    font-family: SiyamRupali;
-    overflow: hidden;
-    animation: scaleLow 5s infinite;
+  cursor: pointer;
+  font-size: 1.7rem;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 1rem 4rem;
+  background: $pmColor;
+  color: #fff;
+  transition: 0.2s;
+  position: relative;
+  font-family: SiyamRupali;
+  overflow: hidden;
+  animation: scaleLow 5s infinite;
 
-    &::after {
-        content: "";
-        left: 50%;
-        top: 0;
-        position: absolute;
-        width: 2rem;
-        height: 100%;
-        background: linear-gradient(
-            90deg,
-            rgba(255, 255, 255, 0) 0%,
-            rgba(255, 255, 255, 0.6) 50%,
-            rgba(255, 255, 255, 0) 100%
-        );
-        animation: leftAnimBtn 4s ease-in-out infinite;
-    }
+  &::after {
+    content: "";
+    left: 50%;
+    top: 0;
+    position: absolute;
+    width: 2rem;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.6) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    animation: leftAnimBtn 4s ease-in-out infinite;
+  }
 
-    &:hover {
-        background: #dc7f04;
-        animation: none;
-    }
+  &:hover {
+    background: #dc7f04;
+    animation: none;
+  }
 
-    &:active {
-        transform: scale(0.9);
-    }
+  &:active {
+    transform: scale(0.9);
+  }
 }
 
 .btn_outline {
-    @extend .btn;
-    background: none;
-    border: 2px solid $pmColor !important;
-    color: $pmColor;
-    padding: 1rem 3rem;
+  @extend .btn;
+  background: none;
+  border: 2px solid $pmColor !important;
+  color: $pmColor;
+  padding: 1rem 3rem;
 
-    &:hover {
-        transform: scale(1);
-        background: $pmColor;
-        color: #fff;
-    }
+  &:hover {
+    transform: scale(1);
+    background: $pmColor;
+    color: #fff;
+  }
 
-    &:active {
-        transform: scale(0.9);
-    }
+  &:active {
+    transform: scale(0.9);
+  }
 }

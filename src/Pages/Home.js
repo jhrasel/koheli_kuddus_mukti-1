@@ -10,21 +10,21 @@ import SocialWorks from "../Components/SocialWorks";
 import Strength from "../Components/Strength";
 
 export default function Home() {
-    return (
-        <>
-            <Banner />
-            <div className="container">
-                <Cards />
-                <Introduction />
-                <Strength />
-            </div>
-            <Programs />
-            <div className="container">
-                <PoliticalTour />
-                <SocialWorks />
-                <PhotosVideos />
-                <ContactMe />
-            </div>
-        </>
-    );
+  return (
+    <>
+      <Banner />
+      <div className="container">
+        <Cards />
+        <Introduction />
+        <Strength />
+      </div>
+      <Programs />
+      <div className="container">
+        <PoliticalTour />
+        <SocialWorks />
+        <PhotosVideos />
+        <ContactMe />
+      </div>
+    </>
+  );
 }
