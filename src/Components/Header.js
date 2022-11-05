@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Boat from "../Assets/images/Boat.svg";
 import LOGO from "../Assets/images/LOGO.svg";
 
-export default function Nav() {
+export default function Header() {
   const [sticky, setSticky] = useState(false);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ export default function Nav() {
   }, [sticky]);
 
   return (
-    <nav id="nav" className={sticky && "sticky"}>
+    <nav id="header" className={sticky && "sticky"}>
       <div className="container">
         <div className="logo_container">
           <Link to={"/"}>

@@ -9,8 +9,7 @@ import Programs from "../Components/Programs";
 import SocialWorks from "../Components/SocialWorks";
 import Strength from "../Components/Strength";
 
-export default function Home({ appSettings }) {
-  //   console.log(appSettings);
+export default function Home() {
   return (
     <>
       <Banner />

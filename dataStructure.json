@@ -1,0 +1,93 @@
+{
+  "about": {
+    "HeadText": "আমার পরিচিতি",
+    "aboutDesc": "স্বাধীনতার আগ থেকে বঙ্গবন্ধুর নির্দেশে উত্তরবঙ্গ জুরে ছাত্র রাজনীতির নেতৃত্বদানকারী",
+    "aboutImg": "upload/....."
+  },
+
+  "strength": {
+    "HeadText": "আমার শক্তি",
+    "HeadDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum",
+    "strengthImg": "upload/.....",
+    "strengthInfo": [
+      {
+        "title": "পড়ালেখা",
+        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been"
+      },
+      {
+        "title": "সামাজিক উন্নয়ন",
+        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been"
+      }
+    ]
+  },
+
+  "programs": {
+    "HeadText": "আমার আসন্ন প্রোগ্রামসমুহ",
+    "HeadDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum",
+    "programInfo": [
+      {
+        "programTitle": "Opening Ceremony of Mohammadpur high school",
+        "date": "Today",
+        "time": "09 : 10 AM"
+      },
+      {
+        "programTitle": "Opening Ceremony of Mohammadpur high school",
+        "date": "Tommorow",
+        "time": "09 : 10 AM"
+      }
+    ]
+  },
+
+  "politicalTour": {
+    "HeadText": "আমার রাজনীতিক যাত্রা",
+    "HeadDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum",
+    "politicalTourInfo": [
+      {
+        "season": "২০১২-২০১৪",
+        "title": "ঢাকা মহানগর আওয়ামিলীগ মেম্বার",
+        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",
+        "image": "uploads"
+      },
+      {
+        "season": "২০১২-২০১৪",
+        "title": "ঢাকা মহানগর আওয়ামিলীগ মেম্বার",
+        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",
+        "image": "uploads"
+      }
+    ]
+  },
+
+  "socialWorks": {
+    "HeadText": "আমার সামাজিক কর্মকান্ড",
+    "HeadDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum",
+    "video_link": "youtube-video-link"
+  },
+
+  "photosVideosGallery": {
+    "HeadText": "ছবি এবং ভিডিও",
+    "HeadDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum",
+    "photos_gallery": ["photos", "photos", "photos"],
+    "video_gallery": [
+      "youtube-video-link",
+      "youtube-video-link",
+      "youtube-video-link"
+    ]
+  },
+
+  "contactMe": {
+    "HeadText": "যোগাযোগ করুন",
+    "HeadDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum",
+    "contactOptions": {
+      "address": "605 West Nakhalpara",
+      "phone": "018334343943",
+      "email": "testing@gmail.com"
+    },
+    "socialMediaLinks": {
+      "twitter": "twitter.com",
+      "facebook": "facebook.com",
+      "linkedin": "linkedin.com",
+      "instagram": "instagram.com",
+      "youtube": "youtube.com"
+    }
+  }
+}

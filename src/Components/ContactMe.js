@@ -16,7 +16,6 @@ export default function ContactMe() {
   function handleSubmit(e) {
     e.preventDefault();
   }
-  console.log(appSettings);
 
   function handleChange(e) {
     setMail({
@@ -26,6 +25,7 @@ export default function ContactMe() {
   }
 
   async function fetchAppSettings() {
+    // console.log(appSettings);
     try {
       const response = await axios.get(
         "http://koheli.sscquizcontest.com/api/application-settings"
@@ -40,9 +40,9 @@ export default function ContactMe() {
     fetchAppSettings();
 
     //   SET APP TITLE
-    document.title = appSettings.app_name
-      ? appSettings.app_name
-      : "কোহেলী কুদ্দুস মুক্তি";
+    // document.title = appSettings.app_name
+    //   ? appSettings.app_name
+    //   : "কোহেলী কুদ্দুস মুক্তি";
   }, [appSettings]);
 
   return (
@@ -129,7 +129,11 @@ export default function ContactMe() {
 
           {/* Social Media Links */}
           <div className="social_links">
-            <a href="/">
+            <a
+              href={appSettings.app_instagram}
+              target="_blank"
+              rel="noreferrer"
+            >
               <AiOutlineTwitter />
             </a>
             <a href="/">

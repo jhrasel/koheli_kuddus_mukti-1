@@ -2,7 +2,7 @@
 /*==============================
         NAV
  ==============================*/
-#nav {
+#header {
   position: fixed;
   width: 100%;
   top: 0;
@@ -40,7 +40,7 @@
     }
   }
 }
-#nav.sticky {
+#header.sticky {
   position: sticky;
   top: 0;
   left: 0;
@@ -207,6 +207,7 @@
     p {
       margin: 1.5rem 0 1rem;
       font-size: 1.4rem;
+      line-height: 2rem;
       color: $headTxtColor;
     }
     b {
@@ -217,6 +218,7 @@
     span {
       color: $paraColor;
       font-size: 1.4rem;
+      line-height: 2rem;
     }
   }
 }
@@ -268,7 +270,7 @@
           p {
             text-align: left;
             font-size: 1.6rem;
-            line-height: 2rem;
+            // line-height: 2rem;
           }
         }
       }
@@ -419,7 +421,7 @@
           }
           p {
             font-size: 1.4rem;
-            line-height: 1.7rem;
+            line-height: 2rem;
             text-align: right;
           }
         }
