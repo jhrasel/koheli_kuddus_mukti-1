@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import {
   AiFillFacebook,
   AiFillLinkedin,
@@ -8,14 +9,14 @@ import {
 import { GoLocation } from "react-icons/go";
 import { ImMobile } from "react-icons/im";
 
-export default function ContactMe({ appSettings }) {
+export default function ContactMe() {
   const [mail, setMail] = useState({ name: "", email: "", message: "" });
-
-  //   console.log(appSettings);
+  const [appSettings, setAppSettings] = useState({});
 
   function handleSubmit(e) {
     e.preventDefault();
   }
+  console.log(appSettings);
 
   function handleChange(e) {
     setMail({
@@ -23,6 +24,26 @@ export default function ContactMe({ appSettings }) {
       [e.target.name]: e.target.value,
     });
   }
+
+  async function fetchAppSettings() {
+    try {
+      const response = await axios.get(
+        "http://koheli.sscquizcontest.com/api/application-settings"
+      );
+      setAppSettings(response.data.data);
+    } catch (error) {
+      //
+    }
+  }
+
+  useEffect(() => {
+    fetchAppSettings();
+
+    //   SET APP TITLE
+    document.title = appSettings.app_name
+      ? appSettings.app_name
+      : "কোহেলী কুদ্দুস মুক্তি";
+  }, [appSettings]);
 
   return (
     <section id="contactMe">

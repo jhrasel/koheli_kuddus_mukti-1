@@ -24,7 +24,7 @@ export default function Home({ appSettings }) {
         <PoliticalTour />
         <SocialWorks />
         <PhotosVideos />
-        <ContactMe appSettings={appSettings} />
+        <ContactMe />
       </div>
     </>
   );
