@@ -19,9 +19,8 @@ export default function Home() {
         "http://koheli.sscquizcontest.com/api/home/page-data"
       );
       setAlldata(response.data.data);
-      console.log(allData);
     } catch (error) {
-      //
+      console.log(error);
     }
   }
 
