@@ -206,8 +206,8 @@
     }
     p {
       margin: 1.5rem 0 1rem;
-      font-size: 1.4rem;
-      line-height: 2rem;
+      font-size: 1.5rem;
+      line-height: 2.2rem;
       color: $headTxtColor;
     }
     b {
@@ -315,7 +315,7 @@
       gap: 1.5rem;
       padding: 2rem;
       background: #fff;
-      color: $paraColor;
+      color: $programColor;
 
       .date_area {
         min-width: 110px !important;
@@ -323,7 +323,7 @@
         padding-right: 1.5rem;
 
         p {
-          color: $paraColor;
+          color: $programColor;
           text-align: right;
         }
         b {
@@ -520,6 +520,7 @@
     // width: 100%;
     width: 560px;
     aspect-ratio: 16/9;
+    border-radius: 10px;
   }
 }
 
@@ -643,6 +644,7 @@
       width: 100%;
       aspect-ratio: 16/9;
       border: 1px solid $headTxtColor !important;
+      border-radius: 10px;
     }
   }
 

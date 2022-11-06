@@ -20,6 +20,7 @@ body {
   overflow-x: hidden;
   // font-family: $RobotoCondensed;
   font-family: $Roboto !important;
+  font-family: SiyamRupali !important;
   color: #000;
   font-size: 1.6rem;
   line-height: 2rem;
@@ -70,7 +71,7 @@ textarea:focus {
 
 p {
   font-size: 1.6rem;
-  line-height: 2.4rem;
+  line-height: 2.3rem;
   text-align: justify;
   color: $paraColor;
 }
