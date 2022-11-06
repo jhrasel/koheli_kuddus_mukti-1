@@ -1,85 +1,81 @@
 import React from "react";
 import PoliticalImg from "../Assets/images/Political/Political.svg";
 
-const PoliticalTourInfo = [
+export default function PoliticalTour({ allData }) {
+  const PoliticalTourInfo = [
     {
-        season: "২০১২-২০১৪",
-        title: "ঢাকা মহানগর আওয়ামিলীগ মেম্বার",
-        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",
-        image: PoliticalImg,
+      season: allData?.rajniti_date_one,
+      title: allData?.rajniti_title_one,
+      desc: allData?.rajniti_one_des,
+      image: PoliticalImg, //
     },
     {
-        season: "২০১৪-২০১৬",
-        title: "ঢাকা দক্ষিণ মহিলা লীগ সভাপতি",
-        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",
-        image: PoliticalImg,
+      season: allData?.rajniti_date_two,
+      title: allData?.rajniti_title_two,
+      desc: allData?.rajniti_two_des,
+      image: PoliticalImg, //
     },
     {
-        season: "২০১৬-২০২১",
-        title: "জাতীয় সংসদ সদস্য",
-        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",
-        image: PoliticalImg,
+      season: allData?.rajniti_date_three,
+      title: allData?.rajniti_title_three,
+      desc: allData?.rajniti_three_des,
+      image: PoliticalImg, //
     },
     {
-        season: "২০১২-২০১৪",
-        title: "ঢাকা মহানগর আওয়ামিলীগ মেম্বার",
-        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",
-        image: PoliticalImg,
+      season: allData?.rajniti_date_four,
+      title: allData?.rajniti_title_four,
+      desc: allData?.rajniti_four_des,
+      image: PoliticalImg, //
     },
     {
-        season: "২০১৪-২০১৬",
-        title: "ঢাকা দক্ষিণ মহিলা লীগ সভাপতি",
-        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",
-        image: PoliticalImg,
+      season: allData?.rajniti_date_five,
+      title: allData?.rajniti_title_five,
+      desc: allData?.rajniti_three_five,
+      image: PoliticalImg, //
     },
     {
-        season: "২০১৬-২০২১",
-        title: "জাতীয় সংসদ সদস্য",
-        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",
-        image: PoliticalImg,
+      season: allData?.rajniti_date_six,
+      title: allData?.rajniti_title_six,
+      desc: allData?.rajniti_three_six,
+      image: PoliticalImg, //
     },
-];
+  ];
 
-export default function PoliticalTour() {
-    return (
-        <section id="political_tour">
-            {/* <div className="container"> */}
-            <div className="section_heading_container">
-                <h2 className="section_title">আমার রাজনীতিক যাত্রা</h2>
-                <p className="section_description">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever
-                </p>
-            </div>
+  return (
+    <section id="political_tour">
+      <div className="section_heading_container">
+        <h2 className="section_title">
+          {allData?.rajniti_heading
+            ? allData.rajniti_heading
+            : "আমার রাজনীতিক যাত্রা"}
+        </h2>
+        <p className="section_description">{allData?.rajniti_description}</p>
+      </div>
 
-            <div className="section_content">
-                <div className="political_tour_info_container">
-                    <div className="middle_line">{/* Middle Line */}</div>
+      <div className="section_content">
+        <div className="political_tour_info_container">
+          <div className="middle_line">{/* Middle Line */}</div>
 
-                    {PoliticalTourInfo.map((info, index) => (
-                        <div
-                            className={`political_tour_info ${
-                                index % 2 === 1 && "reverse"
-                            }`}
-                            key={index}
-                        >
-                            <div className="info_area">
-                                <div className="text_area bn">
-                                    <h6>{info.title}</h6>
-                                    <p>{info.desc}</p>
-                                </div>
-                                <img src={info.image} alt="img" />
-                            </div>
-
-                            <div className="mid_icon">{/* Middle Point */}</div>
-
-                            <div className="season bn">{info.season}</div>
-                        </div>
-                    ))}
+          {PoliticalTourInfo.map((info, index) => (
+            <div
+              className={`political_tour_info ${index % 2 === 1 && "reverse"}`}
+              key={index}
+            >
+              <div className="info_area">
+                <div className="text_area bn">
+                  <h6>{info.title}</h6>
+                  <p>{info.desc}</p>
                 </div>
+                <img src={info.image} alt="img" />
+              </div>
+
+              <div className="mid_icon">{/* Middle Point */}</div>
+
+              <div className="season bn">{info.season}</div>
             </div>
-            {/* </div> */}
-        </section>
-    );
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }

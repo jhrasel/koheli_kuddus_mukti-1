@@ -16,7 +16,7 @@ export default function Introduction({ allData }) {
         <b>
           {allData.about_name ? allData.about_name : "কোহেলী কুদ্দুস মুক্তি"}
         </b>
-        <span>অ্যাডভোকেট</span>
+        <span>{allData?.title}</span>
       </div>
     </section>
   );
