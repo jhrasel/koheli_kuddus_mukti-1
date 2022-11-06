@@ -786,6 +786,20 @@
 }
 
 /*==============================
+        LOADER
+ ==============================*/
+#loader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999999;
+  background: #030303cf;
+  color: #fff;
+  display: grid;
+  place-content: center;
+}
+/*==============================
         RESPONSIVE
  ==============================*/
 @import "responsive.scss";

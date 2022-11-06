@@ -4,6 +4,7 @@ import BannerTwo from "../Assets/images/Banner/banner-1.jpg";
 import BannerOne from "../Assets/images/Banner/banner-2.jpg";
 import BannerThree from "../Assets/images/Banner/banner-3.jpg";
 import BannerFour from "../Assets/images/Banner/banner-4.jpg";
+import Loader from "./Loader";
 
 // Import Swiper React components
 import { Autoplay } from "swiper";
@@ -11,6 +12,8 @@ import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function Banner() {
+  const [loader, setLoader] = React.useState(false);
+
   return (
     <section id="banner">
       {/* <div className="container"> */}
@@ -60,6 +63,9 @@ export default function Banner() {
           <button className="btn">যোগাযোগ করুন</button>
         </div>
       </div>
+
+      {/* LOADER */}
+      {loader && <Loader />}
     </section>
   );
 }
