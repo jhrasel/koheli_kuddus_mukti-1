@@ -16,41 +16,6 @@ var monthName = [
   "Dec",
 ];
 
-const programList = [
-  {
-    // MAXIMUM 70 CHARACTER FOR PROGRAM TITLE
-    programTitle:
-      "Meeting with Ministry of Environment for socializing lll ssfs sdfjkkl efsdfo fsdfsdffs ffsdsd ",
-    date: `Yesterday`,
-    time: `09 : 10 AM`,
-  },
-  {
-    programTitle: "Opening Ceremony of Mohammadpur high school",
-    date: `Today`,
-    time: `09 : 10 AM`,
-  },
-  {
-    programTitle: "Opening Ceremony of Mohammadpur high school",
-    date: `Tommorow`,
-    time: `09 : 10 AM`,
-  },
-  {
-    programTitle: "Opening Ceremony of Mohammadpur high school",
-    date: `${new Date().getDate() + 2} ${monthName[new Date().getMonth()]}`,
-    time: `09 : 10 AM`,
-  },
-];
-
-const pr = [
-  {
-    id: 3,
-    date: "2022-11-06T17:26",
-    description: "Today Meeting",
-    created_at: "2022-11-06T05:27:12.000000Z",
-    updated_at: "2022-11-06T05:27:12.000000Z",
-  },
-];
-
 function getDate(dbsDate) {
   const date = new Date().getDate();
   const month = new Date().getMonth() + 1;

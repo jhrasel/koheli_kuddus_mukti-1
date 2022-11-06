@@ -594,7 +594,7 @@
     padding: 0 7rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(5, 20rem);
+    grid-template-rows: repeat(auto-fit, 20rem);
     grid-gap: 2rem;
 
     img {

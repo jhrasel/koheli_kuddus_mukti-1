@@ -1,5 +1,4 @@
 import React from "react";
-import strengthImg from "../Assets/images/strength.svg";
 
 export default function Strength({ allData }) {
   const strengthInfo = [
@@ -38,7 +37,10 @@ export default function Strength({ allData }) {
 
       <div className="section_content">
         <div className="img_area">
-          <img src={strengthImg} alt="strengthImg" />
+          <img
+            src={`http://koheli.sscquizcontest.com/${allData.amar_img}`}
+            alt="strengthImg"
+          />
         </div>
         <div className="strength_Info_container">
           {strengthInfo.map((strg, index) => (

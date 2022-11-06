@@ -14,8 +14,7 @@ export default function SocialWorks({ allData }) {
 
       <div className="video_area">
         <iframe
-        //   src={`https://www.youtube.com/embed/${allData?.samajik_kormo_link}`}
-            src={allData?.samajik_kormo_link}
+          src={allData?.samajik_kormo_link}
           //   src="https://www.youtube.com/embed/xFha5XgMdHA"
           title="YouTube video player"
           frameBorder="0"

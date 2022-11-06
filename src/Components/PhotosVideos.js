@@ -1,30 +1,21 @@
 import axios from "axios";
 import React, { useState } from "react";
-import photos1 from "../Assets/images/Chobi/photos (1).jpg";
-import photos2 from "../Assets/images/Chobi/photos (2).jpg";
-import photos3 from "../Assets/images/Chobi/photos (3).jpg";
-import photos4 from "../Assets/images/Chobi/photos (4).jpg";
-import photos5 from "../Assets/images/Chobi/photos (5).jpg";
-import photos6 from "../Assets/images/Chobi/photos (6).jpg";
-import photos7 from "../Assets/images/Chobi/photos (7).jpg";
-import photos8 from "../Assets/images/Chobi/photos (8).jpg";
-import photos9 from "../Assets/images/Chobi/photos (9).jpg";
-
-const allPhotos = [
-  photos1,
-  photos2,
-  photos7,
-  photos4,
-  photos9,
-  photos6,
-  photos5,
-  photos3,
-  photos8,
-];
 
 export default function PhotosVideos() {
   const [btn, setBtn] = useState("photos");
   const [videos, setVideos] = useState([]);
+  const [images, setImages] = useState([]);
+
+  async function fetchImages() {
+    try {
+      const res = await axios.get(
+        "http://koheli.sscquizcontest.com/api/gallery"
+      );
+      setImages(res.data.data);
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   async function fetchVideos() {
     try {
@@ -36,8 +27,9 @@ export default function PhotosVideos() {
   }
 
   React.useEffect(() => {
+    fetchImages();
     fetchVideos();
-  }, [videos]);
+  }, [images, videos]);
 
   return (
     <section id="photosVideos">
@@ -68,9 +60,9 @@ export default function PhotosVideos() {
       <div className="section_content">
         {btn === "photos" ? (
           <div className="photo_grid">
-            {allPhotos.map((photo, index) => (
+            {images.map((photo, index) => (
               <img
-                src={photo}
+                src={`http://koheli.sscquizcontest.com/${photo.photo}`}
                 alt="Photos"
                 key={index}
                 className={`photo${index + 1}`}

@@ -1,9 +1,6 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
-import BannerTwo from "../Assets/images/Banner/banner-1.jpg";
-import BannerOne from "../Assets/images/Banner/banner-2.jpg";
-import BannerThree from "../Assets/images/Banner/banner-3.jpg";
-import BannerFour from "../Assets/images/Banner/banner-4.jpg";
 import Loader from "./Loader";
 
 // Import Swiper React components
@@ -12,11 +9,20 @@ import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function Banner() {
-  const [loader, setLoader] = React.useState(false);
+  const [loader, setLoader] = React.useState(true);
+  const [bannerData, setbannerData] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("http://koheli.sscquizcontest.com/api/banners")
+      .then(({ data }) => {
+        setbannerData(data.data);
+        setLoader(false);
+      });
+  }, []);
 
   return (
     <section id="banner">
-      {/* <div className="container"> */}
       {/* SLIDER */}
       <div className="slider_container">
         <Swiper
@@ -27,7 +33,7 @@ export default function Banner() {
             disableOnInteraction: false,
           }}
         >
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <img src={BannerOne} alt="banner-img" />
           </SwiperSlide>
           <SwiperSlide>
@@ -38,7 +44,15 @@ export default function Banner() {
           </SwiperSlide>
           <SwiperSlide>
             <img src={BannerFour} alt="banner-img" />
-          </SwiperSlide>
+          </SwiperSlide> */}
+          {bannerData.map((item, key) => (
+            <SwiperSlide key={key}>
+              <img
+                src={"https://koheli.sscquizcontest.com/" + item.photo}
+                alt="banner-img"
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
 
@@ -64,7 +78,7 @@ export default function Banner() {
         </div>
       </div>
 
-      {/* LOADER */}
+      {/* ===== LOADER =====*/}
       {loader && <Loader />}
     </section>
   );

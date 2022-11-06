@@ -1,12 +1,10 @@
 import React from "react";
-// import Introduction_Image from "../Assets/images/Introduction_Image.jpg";
 
 export default function Introduction({ allData }) {
   return (
     <section id="introduction">
-      {/* <img src={Introduction_Image} alt="Introduction_Image" /> */}
       <img
-        src={`http://koheli.sscquizcontest.com/api/home/page-data/${allData.about_img}`}
+        src={`http://koheli.sscquizcontest.com/${allData.about_img}`}
         alt="Introduction_Image"
       />
 
