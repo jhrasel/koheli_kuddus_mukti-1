@@ -11,7 +11,7 @@ import SocialWorks from "../Components/SocialWorks";
 import Strength from "../Components/Strength";
 
 export default function Home() {
-  const [allData, setAlldata] = React.useState(null);
+  const [allData, setAlldata] = React.useState({});
 
   async function fetchAboutData() {
     try {
