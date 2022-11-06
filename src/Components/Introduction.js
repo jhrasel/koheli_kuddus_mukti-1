@@ -1,12 +1,10 @@
 import React from "react";
+import serverURL from "../URL/serverURL";
 
 export default function Introduction({ allData }) {
   return (
     <section id="introduction">
-      <img
-        src={`http://koheli.sscquizcontest.com/${allData.about_img}`}
-        alt="Introduction_Image"
-      />
+      <img src={`${serverURL + allData.about_img}`} alt="Introduction_Image" />
 
       <div className="introduction_text">
         <h2>আমার পরিচিতি</h2>

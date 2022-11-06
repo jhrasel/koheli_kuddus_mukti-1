@@ -1,5 +1,6 @@
 import axios from "axios";
 import React from "react";
+import serverURL from "../URL/serverURL";
 
 var monthName = [
   "Jan",
@@ -49,9 +50,7 @@ export default function Programs({ allData }) {
 
   async function fetchProgramData() {
     try {
-      const res = await axios.get(
-        "http://koheli.sscquizcontest.com/api/schedule"
-      );
+      const res = await axios.get(serverURL + "api/schedule");
       setProgramData(res.data.data);
       // console.log(res.data.data);
       // console.log(programData);

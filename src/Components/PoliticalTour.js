@@ -1,4 +1,5 @@
 import React from "react";
+import serverURL from "../URL/serverURL";
 
 export default function PoliticalTour({ allData }) {
   const PoliticalTourInfo = [
@@ -6,37 +7,37 @@ export default function PoliticalTour({ allData }) {
       season: allData?.rajniti_date_one,
       title: allData?.rajniti_title_one,
       desc: allData?.rajniti_one_des,
-      image: `http://koheli.sscquizcontest.com/${allData?.rajniti_img_one}`,
+      image: `${serverURL + allData?.rajniti_img_one}`,
     },
     {
       season: allData?.rajniti_date_two,
       title: allData?.rajniti_title_two,
       desc: allData?.rajniti_two_des,
-      image: `http://koheli.sscquizcontest.com/${allData?.rajniti_img_two}`,
+      image: `${serverURL + allData?.rajniti_img_two}`,
     },
     {
       season: allData?.rajniti_date_three,
       title: allData?.rajniti_title_three,
       desc: allData?.rajniti_three_des,
-      image: `http://koheli.sscquizcontest.com/${allData?.rajniti_img_three}`,
+      image: `${serverURL + allData?.rajniti_img_three}`,
     },
     {
       season: allData?.rajniti_date_four,
       title: allData?.rajniti_title_four,
       desc: allData?.rajniti_four_des,
-      image: `http://koheli.sscquizcontest.com/${allData?.rajniti_img_four}`,
+      image: `${serverURL + allData?.rajniti_img_four}`,
     },
     {
       season: allData?.rajniti_date_five,
       title: allData?.rajniti_title_five,
       desc: allData?.rajniti_three_five,
-      image: `http://koheli.sscquizcontest.com/${allData?.rajniti_img_five}`,
+      image: `${serverURL + allData?.rajniti_img_five}`,
     },
     {
       season: allData?.rajniti_date_six,
       title: allData?.rajniti_title_six,
       desc: allData?.rajniti_three_six,
-      image: `http://koheli.sscquizcontest.com/${allData?.rajniti_img_six}`,
+      image: `${serverURL + allData?.rajniti_img_six}`,
     },
   ];
 

@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import serverURL from "../URL/serverURL";
 
 export default function PhotosVideos() {
   const [btn, setBtn] = useState("photos");
@@ -8,9 +9,7 @@ export default function PhotosVideos() {
 
   async function fetchImages() {
     try {
-      const res = await axios.get(
-        "http://koheli.sscquizcontest.com/api/gallery"
-      );
+      const res = await axios.get(serverURL + "api/gallery");
       setImages(res.data.data);
     } catch (error) {
       console.log(error);
@@ -19,7 +18,7 @@ export default function PhotosVideos() {
 
   async function fetchVideos() {
     try {
-      const res = await axios.get("http://koheli.sscquizcontest.com/api/video");
+      const res = await axios.get(serverURL + "api/video");
       setVideos(res.data.data);
     } catch (error) {
       console.log(error);
@@ -62,7 +61,7 @@ export default function PhotosVideos() {
           <div className="photo_grid">
             {images.map((photo, index) => (
               <img
-                src={`http://koheli.sscquizcontest.com/${photo.photo}`}
+                src={`${serverURL + photo.photo}`}
                 alt="Photos"
                 key={index}
                 className={`photo${index + 1}`}

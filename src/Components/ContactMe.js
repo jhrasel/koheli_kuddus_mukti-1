@@ -8,6 +8,7 @@ import {
 } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import { ImMobile } from "react-icons/im";
+import serverURL from "../URL/serverURL";
 
 export default function ContactMe() {
   const [mail, setMail] = useState({ name: "", email: "", message: "" });
@@ -26,9 +27,7 @@ export default function ContactMe() {
 
   async function fetchAppSettings() {
     try {
-      const response = await axios.get(
-        "http://koheli.sscquizcontest.com/api/application-settings"
-      );
+      const response = await axios.get(serverURL + "api/application-settings");
       setAppSettings(response.data.data);
     } catch (error) {
       //
@@ -87,7 +86,6 @@ export default function ContactMe() {
                 <GoLocation />
               </span>
               <span className="text">
-                {/* {appSettings.app_address} */}
                 {appSettings?.app_address
                   ? appSettings.app_address
                   : "Not Available"}

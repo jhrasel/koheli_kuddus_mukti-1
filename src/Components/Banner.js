@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
+import serverURL from "../URL/serverURL";
 import Loader from "./Loader";
 
 // Import Swiper React components
@@ -13,12 +14,10 @@ export default function Banner() {
   const [bannerData, setbannerData] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("http://koheli.sscquizcontest.com/api/banners")
-      .then(({ data }) => {
-        setbannerData(data.data);
-        setLoader(false);
-      });
+    axios.get(serverURL + "api/banners").then(({ data }) => {
+      setbannerData(data.data);
+      setLoader(false);
+    });
   }, []);
 
   return (
@@ -47,10 +46,7 @@ export default function Banner() {
           </SwiperSlide> */}
           {bannerData.map((item, key) => (
             <SwiperSlide key={key}>
-              <img
-                src={"https://koheli.sscquizcontest.com/" + item.photo}
-                alt="banner-img"
-              />
+              <img src={serverURL + item.photo} alt="banner-img" />
             </SwiperSlide>
           ))}
         </Swiper>

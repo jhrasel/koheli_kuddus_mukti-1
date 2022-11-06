@@ -10,6 +10,7 @@ import PoliticalTour from "../Components/PoliticalTour";
 import Programs from "../Components/Programs";
 import SocialWorks from "../Components/SocialWorks";
 import Strength from "../Components/Strength";
+import serverURL from "../URL/serverURL";
 
 export default function Home() {
   const [loader, setLoader] = React.useState(true);
@@ -31,12 +32,10 @@ export default function Home() {
     // } catch (error) {
     //   console.log(error);
     // }
-    axios
-      .get("http://koheli.sscquizcontest.com/api/home/page-data")
-      .then(({ data }) => {
-        setAlldata(data.data);
-        setLoader(false);
-      });
+    axios.get(serverURL + "api/home/page-data").then(({ data }) => {
+      setAlldata(data.data);
+      setLoader(false);
+    });
   }
 
   React.useEffect(() => {

@@ -1,4 +1,5 @@
 import React from "react";
+import serverURL from "../URL/serverURL";
 
 export default function Strength({ allData }) {
   const strengthInfo = [
@@ -37,10 +38,7 @@ export default function Strength({ allData }) {
 
       <div className="section_content">
         <div className="img_area">
-          <img
-            src={`http://koheli.sscquizcontest.com/${allData.amar_img}`}
-            alt="strengthImg"
-          />
+          <img src={`${serverURL + allData.amar_img}`} alt="strengthImg" />
         </div>
         <div className="strength_Info_container">
           {strengthInfo.map((strg, index) => (
