@@ -2,7 +2,7 @@ import axios from "axios";
 import React from "react";
 import serverURL from "../URL/serverURL";
 
-var monthName = [
+var monthList = [
   "Jan",
   "Feb",
   "Mar",
@@ -28,8 +28,10 @@ function getDate(dbsDate) {
 
   // Work with dbsDate
   const onlyDate = dbsDate.split("T");
-  let day = "";
-  day = today === onlyDate[0] ? "Today" : onlyDate[0];
+  let [yearNum, monthNum, dateNum] = onlyDate[0].split("-");
+
+  const day =
+    today === onlyDate[0] ? "Today" : `${dateNum} ${monthList[monthNum - 1]}`;
   return day;
 }
 
