@@ -26,9 +26,6 @@ export default function ContactMe({ targetForm }) {
         msg: mail.message,
       })
       .then((response) => {
-        console.log(response.status);
-
-        //
         if (response.status === 200) {
           alert("Success! Your message sent successfully...");
         } else {

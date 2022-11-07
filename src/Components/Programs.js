@@ -54,8 +54,6 @@ export default function Programs({ allData }) {
     try {
       const res = await axios.get(serverURL + "api/schedule");
       setProgramData(res.data.data);
-      // console.log(res.data.data);
-      // console.log(programData);
     } catch (error) {
       console.log(error);
     }
@@ -63,17 +61,6 @@ export default function Programs({ allData }) {
 
   React.useEffect(() => {
     fetchProgramData();
-
-    // programData.forEach((program) => {
-    //   const programObj = {
-    //     programTitle: program.description,
-    //     date: program.date,
-    //     time: program.date,
-    //   };
-
-    //   programInfoList.push(programObj);
-    // });
-    // console.log(programInfoList);
   }, [programData]);
 
   return (

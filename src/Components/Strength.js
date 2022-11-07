@@ -40,6 +40,7 @@ export default function Strength({ allData }) {
         <div className="img_area">
           <img src={`${serverURL + allData.amar_img}`} alt="strengthImg" />
         </div>
+        
         <div className="strength_Info_container">
           {strengthInfo.map((strg, index) => (
             <div className="strength_Info" key={index + 1}>
