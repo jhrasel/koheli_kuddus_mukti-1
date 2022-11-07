@@ -12,11 +12,21 @@ import { Swiper, SwiperSlide } from "swiper/react";
 export default function Banner() {
   const [loader, setLoader] = React.useState(true);
   const [bannerData, setbannerData] = useState([]);
+  const [bannerDesc, setBannerDesc] = useState([]);
 
   useEffect(() => {
     axios.get(serverURL + "api/banners").then(({ data }) => {
       setbannerData(data.data);
       setLoader(false);
+
+      //
+      // eslint-disable-next-line array-callback-return
+      data.data.map((item) => {
+        // setBannerDesc(data.data.banner_description);
+        bannerDesc.push(item.banner_description);
+      });
+      console.log(bannerDesc);
+      // console.log(bannerDesc);
     });
   }, []);
 
@@ -57,10 +67,11 @@ export default function Banner() {
         <div className="banner_heading">
           <h1 className="bn">
             <Typewriter
-              words={[
-                // Max 60 character
-                "আপনাদের দোয়া ও ভালবাসায় জনগনের সেবায় নিবেদিত প্রাণ",
-              ]}
+              words={
+                bannerDesc[0]
+                  ? bannerDesc
+                  : ["আপনাদের দোয়া ও ভালোবাসায় জনগনের সেবায় নিবেদিত প্রাণ"]
+              }
               loop={false}
               cursor
               cursorStyle="_"
