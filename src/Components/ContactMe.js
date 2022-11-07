@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import {
   AiFillFacebook,
   AiFillLinkedin,
+  AiFillYoutube,
+  AiOutlineInstagram,
   AiOutlineMail,
   AiOutlineTwitter,
 } from "react-icons/ai";
@@ -41,10 +43,13 @@ export default function ContactMe() {
   return (
     <section id="contactMe">
       <div className="section_heading_container">
-        <h2 className="section_title">যোগাযোগ করুন</h2>
+        <h2 className="section_title">
+          {appSettings.contact_title
+            ? appSettings.contact_title
+            : "যোগাযোগ করুন"}
+        </h2>
         <p className="section_description">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          {appSettings?.contact_description}
         </p>
       </div>
 
@@ -121,18 +126,24 @@ export default function ContactMe() {
 
           {/* Social Media Links */}
           <div className="social_links">
+            <a href={appSettings?.app_twitter} target="_blank" rel="noreferrer">
+              <AiOutlineTwitter />
+            </a>
+            <a href={appSettings?.app_fb} target="_blank" rel="noreferrer">
+              <AiFillFacebook />
+            </a>
+            <a href={appSettings?.app_linkdin} target="_blank" rel="noreferrer">
+              <AiFillLinkedin />
+            </a>
             <a
-              href={appSettings.app_instagram}
+              href={appSettings?.app_instagram}
               target="_blank"
               rel="noreferrer"
             >
-              <AiOutlineTwitter />
+              <AiOutlineInstagram />
             </a>
-            <a href="/">
-              <AiFillFacebook />
-            </a>
-            <a href="/">
-              <AiFillLinkedin />
+            <a href={appSettings?.app_youtube} target="_blank" rel="noreferrer">
+              <AiFillYoutube />
             </a>
           </div>
         </div>

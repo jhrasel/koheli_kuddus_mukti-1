@@ -63,10 +63,10 @@ export default function PoliticalTour({ allData }) {
             >
               <div className="info_area">
                 <div className="text_area bn">
-                  <h6>{info.title}</h6>
-                  <p>{info.desc}</p>
+                  <h6>{info?.title}</h6>
+                  <p>{info?.desc}</p>
                 </div>
-                <img src={info.image} alt="img" />
+                <img src={info?.image} alt="img" />
               </div>
 
               <div className="mid_icon">{/* Middle Point */}</div>

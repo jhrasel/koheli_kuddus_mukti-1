@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import serverURL from "../URL/serverURL";
 
-export default function PhotosVideos() {
+export default function PhotosVideos({ allData }) {
   const [btn, setBtn] = useState("photos");
   const [videos, setVideos] = useState([]);
   const [images, setImages] = useState([]);
@@ -33,11 +33,10 @@ export default function PhotosVideos() {
   return (
     <section id="photosVideos">
       <div className="section_heading_container">
-        <h2 className="section_title">ছবি এবং ভিডিও</h2>
-        <p className="section_description">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-        </p>
+        <h2 className="section_title">
+          {allData.gallery_heading ? allData.gallery_heading : "ছবি এবং ভিডিও"}
+        </h2>
+        <p className="section_description">{allData?.gallery_description}</p>
       </div>
 
       <div className="btn_block">

@@ -54,7 +54,7 @@ export default function Home() {
       <div className="container">
         <PoliticalTour allData={allData} />
         <SocialWorks allData={allData} />
-        <PhotosVideos />
+        <PhotosVideos allData={allData} />
         <ContactMe />
       </div>
 
