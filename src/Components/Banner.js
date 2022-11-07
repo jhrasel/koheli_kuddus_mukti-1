@@ -9,7 +9,7 @@ import { Autoplay } from "swiper";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-export default function Banner() {
+export default function Banner({ scrollToForm }) {
   const [loader, setLoader] = React.useState(true);
   const [bannerData, setbannerData] = useState([]);
   const [bannerDesc, setBannerDesc] = useState([]);
@@ -19,16 +19,12 @@ export default function Banner() {
       setbannerData(data.data);
       setLoader(false);
 
-      //
       // eslint-disable-next-line array-callback-return
       data.data.map((item) => {
-        // setBannerDesc(data.data.banner_description);
         bannerDesc.push(item.banner_description);
       });
-      console.log(bannerDesc);
-      // console.log(bannerDesc);
     });
-  }, []);
+  }, [bannerDesc]);
 
   return (
     <section id="banner">
@@ -81,7 +77,9 @@ export default function Banner() {
             />
           </h1>
           {/* <h1>আপনাদের দোয়া ও ভালবাসায় জনগনের সেবায় নিবেদিত প্রাণ </h1> */}
-          <button className="btn">যোগাযোগ করুন</button>
+          <button className="btn" onClick={scrollToForm}>
+            যোগাযোগ করুন
+          </button>
         </div>
       </div>
 

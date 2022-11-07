@@ -1,5 +1,5 @@
 import axios from "axios";
-import React from "react";
+import React, { useRef } from "react";
 import Banner from "../Components/Banner";
 import Cards from "../Components/Cards";
 import ContactMe from "../Components/ContactMe";
@@ -13,30 +13,20 @@ import Strength from "../Components/Strength";
 import serverURL from "../URL/serverURL";
 
 export default function Home() {
+  const targetForm = useRef(null);
   const [loader, setLoader] = React.useState(true);
   const [allData, setAlldata] = React.useState({});
 
   function fetchAboutData() {
-    // try {
-    //   const response = await axios.get(
-    //     "http://koheli.sscquizcontest.com/api/home/page-data"
-    //   );
-    //   setAlldata(response.data.data);
-    //   setLoader(false);
-
-    //   // setTimeout(() => {
-    //   //   if (loader) {
-    //   //     alert("Please check your internet and RELOAD!");
-    //   //   }
-    //   // }, 10 * 1000);
-    // } catch (error) {
-    //   console.log(error);
-    // }
     axios.get(serverURL + "api/home/page-data").then(({ data }) => {
       setAlldata(data.data);
       setLoader(false);
     });
   }
+
+  const scrollToForm = () => {
+    targetForm.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   React.useEffect(() => {
     fetchAboutData();
@@ -44,7 +34,7 @@ export default function Home() {
 
   return (
     <>
-      <Banner />
+      <Banner scrollToForm={scrollToForm} />
       <div className="container">
         <Cards />
         <Introduction allData={allData} />
@@ -55,7 +45,7 @@ export default function Home() {
         <PoliticalTour allData={allData} />
         <SocialWorks allData={allData} />
         <PhotosVideos allData={allData} />
-        <ContactMe />
+        <ContactMe targetForm={targetForm} />
       </div>
 
       {/* ===== LOADER =====*/}
