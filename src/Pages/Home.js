@@ -16,7 +16,7 @@ export default function Home() {
   const [loader, setLoader] = React.useState(true);
   const [allData, setAlldata] = React.useState({});
 
-  async function fetchAboutData() {
+  function fetchAboutData() {
     // try {
     //   const response = await axios.get(
     //     "http://koheli.sscquizcontest.com/api/home/page-data"

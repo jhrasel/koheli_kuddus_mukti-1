@@ -38,23 +38,15 @@
     -->
     <script>
       const metaDesc = document.querySelector("head meta[name='description']");
-      function fetchHeadData() {
-        const headLink = document.querySelector("head link[rel='icon']");
+      const headLink = document.querySelector("head link[rel='icon']");
 
-        fetch("http://koheli.sscquizcontest.com/api/application-settings")
-          .then((response) => response.json())
-          .then((json) => {
-            console.log(json.data);
-
-            document.title = json.data.app_name;
-            headLink.href = `http://koheli.sscquizcontest.com/${json.data.app_favicon}`;
-            metaDesc.content = json.data.app_description;
-          });
-      }
-
-      fetchHeadData();
-      // console.log(metaDesc.content);
-      // console.log(headLink.href);
+      fetch("http://koheli.sscquizcontest.com/api/application-settings")
+        .then((response) => response.json())
+        .then((json) => {
+          document.title = json.data.app_name;
+          headLink.href = `http://koheli.sscquizcontest.com/${json.data.app_favicon}`;
+          metaDesc.content = json.data.app_description;
+        });
     </script>
   </body>
 </html>

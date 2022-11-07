@@ -18,6 +18,23 @@ export default function ContactMe() {
 
   function handleSubmit(e) {
     e.preventDefault();
+
+    axios
+      .post(serverURL + "api/apply-people", {
+        name: mail.name,
+        email: mail.email,
+        msg: mail.message,
+      })
+      .then((response) => {
+        console.log(response.status);
+
+        //
+        if (response.status === 200) {
+          alert("Success! Your message sent successfully...");
+        } else {
+          alert("Failed! Message didn't sent. Please try again later...");
+        }
+      });
   }
 
   function handleChange(e) {
