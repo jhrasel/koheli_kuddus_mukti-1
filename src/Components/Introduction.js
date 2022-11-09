@@ -8,11 +8,11 @@ export default function Introduction({ allData }) {
 
       <div className="introduction_text">
         <h2>আমার পরিচিতি</h2>
-        <p>{allData?.about_description}</p>
+        <p className="bn">{allData?.about_description}</p>
         <b>
           {allData.about_name ? allData.about_name : "কোহেলী কুদ্দুস মুক্তি"}
         </b>
-        <span>{allData?.title}</span>
+        <span>{allData.title}</span>
       </div>
     </section>
   );

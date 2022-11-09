@@ -20,8 +20,8 @@ var monthList = [
 function getDate(dbsDate) {
   const date = new Date().getDate();
   const month = new Date().getMonth() + 1;
-  let todayDate = date < 9 ? "0" + date : date;
-  let currMonth = month < 9 ? "0" + month + 1 : month;
+  let todayDate = date <= 9 ? "0" + date : date;
+  let currMonth = month <= 9 ? "0" + month + 1 : month;
   let currYear = new Date().getFullYear();
 
   let today = `${currYear}-${currMonth}-${todayDate}`; //Today Date
@@ -30,6 +30,8 @@ function getDate(dbsDate) {
   const onlyDate = dbsDate.split("T");
   let [yearNum, monthNum, dateNum] = onlyDate[0].split("-");
 
+  console.log(onlyDate[0]);
+  console.log(today);
   const day =
     today === onlyDate[0] ? "Today" : `${dateNum} ${monthList[monthNum - 1]}`;
   return day;
