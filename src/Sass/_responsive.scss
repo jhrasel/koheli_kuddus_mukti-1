@@ -367,6 +367,36 @@
     align-items: center;
     padding: 3rem 0;
   }
+
+  // ========= PHOTOS and VIDEOS PAGE =========
+  #photosPage {
+    .button-container {
+      gap: 20px;
+
+      button {
+        font-size: 1.7rem;
+      }
+    }
+
+    .page-content .photo_grid {
+      padding: 0;
+      grid-template-columns: 1fr !important;
+    }
+  }
+
+  #videosPage {
+    .button-container {
+      gap: 20px;
+
+      button {
+        font-size: 1.7rem;
+      }
+    }
+
+    .page-content .video_grid {
+      grid-template-columns: 1fr;
+    }
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -385,28 +415,4 @@
       aspect-ratio: 16/9;
     }
   }
-  // #political_tour .political_tour_info_container .middle_line {
-  //     // top: 70px;
-  //     left: 31%;
-  //     // height: calc(100% - 130px);
-  // }
-  // #political_tour .political_tour_info_container .political_tour_info {
-  //     gap: 1rem;
-  // }
 }
-
-// @media screen and (max-width: 389px) {
-//     #political_tour .political_tour_info_container .middle_line {
-//         display: none;
-//     }
-// }
-
-// @media screen and (max-width: 340px) {
-//     #banner .banner_heading {
-//         h1 {
-//             font-size: 3rem;
-//             line-height: 3.5rem;
-//             height: 12rem;
-//         }
-//     }
-// }
