@@ -24,7 +24,7 @@ export default function Header() {
 
   useEffect(() => {
     window.addEventListener("scroll", function () {
-      if (window.scrollY > 200) {
+      if (window.scrollY > 100) {
         setSticky(true);
       } else {
         setSticky(false);

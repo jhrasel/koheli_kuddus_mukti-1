@@ -1,13 +1,14 @@
 import axios from "axios";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import serverURL from "../URL/serverURL";
 
 export default function PhotosVideos({ allData }) {
   const [btn, setBtn] = useState("photos");
   const [videos, setVideos] = useState([]);
-  const [images, setImages] = useState([]);
+  const [photos, setImages] = useState([]);
 
-  async function fetchImages() {
+  async function fetchPhotos() {
     try {
       const res = await axios.get(serverURL + "api/gallery");
       setImages(res.data.data);
@@ -26,9 +27,9 @@ export default function PhotosVideos({ allData }) {
   }
 
   React.useEffect(() => {
-    fetchImages();
+    fetchPhotos();
     fetchVideos();
-  }, [images, videos]);
+  }, [photos, videos]);
 
   return (
     <section id="photosVideos">
@@ -58,7 +59,7 @@ export default function PhotosVideos({ allData }) {
       <div className="section_content">
         {btn === "photos" ? (
           <div className="photo_grid">
-            {images.map((photo, index) => (
+            {photos.map((photo, index) => (
               <img
                 src={`${serverURL + photo.photo}`}
                 alt="Photos"
@@ -89,7 +90,9 @@ export default function PhotosVideos({ allData }) {
       </div>
 
       <div className="more_btn">
-        <button className="btn">আরো দেখুন</button>
+        <Link to={`${btn}`}>
+          <button className="btn">আরো দেখুন</button>
+        </Link>
       </div>
     </section>
   );
