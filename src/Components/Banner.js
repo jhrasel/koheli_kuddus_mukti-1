@@ -9,7 +9,7 @@ import { Autoplay } from "swiper";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-export default function Banner({ scrollToForm }) {
+export default function Banner({ scrollToContact }) {
   const [loader, setLoader] = React.useState(true);
   const [bannerData, setbannerData] = useState([]);
   const [bannerDesc, setBannerDesc] = useState([]);
@@ -77,7 +77,7 @@ export default function Banner({ scrollToForm }) {
             />
           </h1>
           {/* <h1>আপনাদের দোয়া ও ভালবাসায় জনগনের সেবায় নিবেদিত প্রাণ </h1> */}
-          <button className="btn" onClick={scrollToForm}>
+          <button className="btn" onClick={scrollToContact}>
             যোগাযোগ করুন
           </button>
         </div>

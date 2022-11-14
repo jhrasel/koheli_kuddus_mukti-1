@@ -12,7 +12,7 @@ import { GoLocation } from "react-icons/go";
 import { ImMobile } from "react-icons/im";
 import serverURL from "../URL/serverURL";
 
-export default function ContactMe({ targetForm }) {
+export default function ContactMe({ targetContctME }) {
   const [mail, setMail] = useState({ name: "", email: "", message: "" });
   const [appSettings, setAppSettings] = useState({});
 
@@ -55,7 +55,7 @@ export default function ContactMe({ targetForm }) {
   }, [appSettings]);
 
   return (
-    <section id="contactMe">
+    <section id="contactMe" ref={targetContctME}>
       <div className="section_heading_container">
         <h2 className="section_title">
           {appSettings.contact_title
@@ -69,7 +69,7 @@ export default function ContactMe({ targetForm }) {
 
       <div className="section_content">
         {/* FORM */}
-        <form action="#" method="post" onSubmit={handleSubmit} ref={targetForm}>
+        <form action="#" method="post" onSubmit={handleSubmit}>
           <h6>যোগাযোগ</h6>
 
           <input

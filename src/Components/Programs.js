@@ -49,7 +49,7 @@ function getTime(dbsDate) {
 
 // console.log(getDate());
 
-export default function Programs({ allData }) {
+export default function Programs({ allData, scrollToContact }) {
   const [programData, setProgramData] = React.useState([]);
 
   async function fetchProgramData() {
@@ -76,7 +76,7 @@ export default function Programs({ allData }) {
           </h2>
           <p>{allData?.program_description}</p>
 
-          <button className="btn_outline">
+          <button className="btn_outline" onClick={scrollToContact}>
             {allData?.program_btn_text
               ? allData.program_btn_text
               : "সাক্ষাৎ এর জন্য সময় বুক করুন"}

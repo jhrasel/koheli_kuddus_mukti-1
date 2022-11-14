@@ -13,7 +13,7 @@ import Strength from "../Components/Strength";
 import serverURL from "../URL/serverURL";
 
 export default function Home() {
-  const targetForm = useRef(null);
+  const targetContctME = useRef(null);
   const [loader, setLoader] = React.useState(true);
   const [allData, setAlldata] = React.useState({});
 
@@ -24,28 +24,28 @@ export default function Home() {
     });
   }
 
-  const scrollToForm = () => {
-    targetForm.current?.scrollIntoView({ behavior: "smooth" });
-  };
-
   React.useEffect(() => {
     fetchAboutData();
   }, [allData]);
 
+  const scrollToContact = () => {
+    targetContctME.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
-      <Banner scrollToForm={scrollToForm} />
+      <Banner scrollToContact={scrollToContact} />
       <div className="container">
         <Cards />
         <Introduction allData={allData} />
         <Strength allData={allData} />
       </div>
-      <Programs allData={allData} />
+      <Programs allData={allData} scrollToContact={scrollToContact} />
       <div className="container">
         <PoliticalTour allData={allData} />
         <SocialWorks allData={allData} />
         <PhotosVideos allData={allData} />
-        <ContactMe targetForm={targetForm} />
+        <ContactMe targetContctME={targetContctME} />
       </div>
 
       {/* ===== LOADER =====*/}
