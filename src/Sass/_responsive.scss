@@ -371,6 +371,7 @@
   // ========= PHOTOS and VIDEOS PAGE =========
   #photosPage {
     .button-container {
+      justify-content: space-between;
       gap: 20px;
 
       button {
@@ -386,6 +387,7 @@
 
   #videosPage {
     .button-container {
+      justify-content: space-between;
       gap: 20px;
 
       button {
