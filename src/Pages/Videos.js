@@ -2,26 +2,27 @@ import axios from "axios";
 import React from "react";
 import { BiArrowBack, BiRightArrowAlt } from "react-icons/bi";
 import { Link } from "react-router-dom";
-import ContactMe from "../Components/ContactMe";
 import serverURL from "../URL/serverURL";
+import ContactMe from "../Components/ContactMe";
 
-export default function PhotosPage() {
-  const [photos, setImages] = React.useState([]);
+export default function VideosPage() {
+  const [videos, setVideos] = React.useState([]);
 
-  async function fetchPhotos() {
+  async function fetchVideos() {
     try {
-      const res = await axios.get(serverURL + "api/gallery");
-      setImages(res.data.data);
+      const res = await axios.get(serverURL + "api/video");
+      setVideos(res.data.data);
     } catch (error) {
       console.log(error);
     }
   }
+
   React.useEffect(() => {
-    fetchPhotos();
-  }, [photos]);
+    fetchVideos();
+  }, [videos]);
 
   return (
-    <section id="photosPage">
+    <section id="videosPage">
       <div className="container">
         {/* BUTTONS */}
         <div className="button-container">
@@ -31,9 +32,9 @@ export default function PhotosPage() {
               হোমপেজে ফিরে যান
             </button>
           </Link>
-          <Link to="/videos">
+          <Link to="/photos">
             <button className="btn_arrow">
-              ভিডিও পেজে যান
+              ছবি পেজে যান
               <BiRightArrowAlt />
             </button>
           </Link>
@@ -41,7 +42,7 @@ export default function PhotosPage() {
 
         {/* HEADING */}
         <div className="section_heading_container">
-          <h2 className="section_title">ছবি</h2>
+          <h2 className="section_title">ভিডিও</h2>
           <p className="section_description">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
             dignissimos!
@@ -50,14 +51,21 @@ export default function PhotosPage() {
 
         {/* PAGE CONTENT */}
         <div className="page-content">
-          <div className="photo_grid">
-            {photos.map((photo, index) => (
-              <img
-                src={`${serverURL + photo.photo}`}
-                alt="Photos"
-                key={index}
-                className={`photo${index + 1}`}
-              />
+          <div className="video_grid">
+            {videos?.map((video, index) => (
+              <div className="video_wrapper">
+                <iframe
+                  key={index}
+                  // width="560"
+                  // height="315"
+                  src={video.link}
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+                <span className="loader_text">Please wait few second...</span>
+              </div>
             ))}
           </div>
         </div>
