@@ -30,13 +30,13 @@ export default function PoliticalTour({ allData }) {
     {
       season: allData?.rajniti_date_five,
       title: allData?.rajniti_title_five,
-      desc: allData?.rajniti_three_five,
+      desc: allData?.rajniti_five_des,
       image: `${serverURL + allData?.rajniti_img_five}`,
     },
     {
       season: allData?.rajniti_date_six,
       title: allData?.rajniti_title_six,
-      desc: allData?.rajniti_three_six,
+      desc: allData?.rajniti_six_des,
       image: `${serverURL + allData?.rajniti_img_six}`,
     },
   ];
