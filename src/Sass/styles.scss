@@ -431,6 +431,8 @@
           border-radius: 50%;
           width: 8rem;
           height: 8rem;
+          min-height: 8rem;
+          min-width: 8rem;
           object-fit: cover;
         }
       }

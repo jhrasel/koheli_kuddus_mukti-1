@@ -125,7 +125,7 @@
         gap: 0.8rem;
 
         .info_area {
-          justify-content: flex-start !important;
+          justify-content: flex-end !important;
           gap: 2rem;
           align-items: flex-start;
           width: 100%;
@@ -140,6 +140,9 @@
           img {
             width: 7rem;
             height: 7rem;
+            min-width: 7rem;
+            min-height: 7rem;
+            object-fit: cover;
           }
         }
 
@@ -172,7 +175,7 @@
 
 @media screen and (max-width: 680px) {
   #banner {
-    height: 40vh;
+    height: 30vh;
 
     &::after {
       height: 100%;
@@ -181,7 +184,7 @@
     .slider_container {
       height: 100%;
       img {
-        height: 40vh;
+        height: 30vh;
       }
     }
 
@@ -190,15 +193,15 @@
       .banner_heading {
         h1 {
           max-width: 30rem;
-          font-size: 2.5rem;
+          font-size: 2rem !important;
           line-height: 3rem;
-          min-height: 10rem;
+          min-height: 7rem;
           margin-bottom: 1rem;
         }
 
         button {
-          font-size: 1.5rem;
-          padding: 0.8rem 2rem;
+          font-size: 1.3rem;
+          padding: 0.6rem 1.5rem;
         }
       }
     }
