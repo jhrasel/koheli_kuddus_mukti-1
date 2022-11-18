@@ -1,3 +1,3 @@
-const URL = "http://koheli.sscquizcontest.com/";
+const URL = "https://koheli.sscquizcontest.com/";
 
 export default URL;
