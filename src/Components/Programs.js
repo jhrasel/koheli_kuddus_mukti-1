@@ -30,8 +30,6 @@ function getDate(dbsDate) {
   const onlyDate = dbsDate.split("T");
   let [yearNum, monthNum, dateNum] = onlyDate[0].split("-");
 
-  console.log(onlyDate[0]);
-  console.log(today);
   const day =
     today === onlyDate[0] ? "Today" : `${dateNum} ${monthList[monthNum - 1]}`;
   return day;
